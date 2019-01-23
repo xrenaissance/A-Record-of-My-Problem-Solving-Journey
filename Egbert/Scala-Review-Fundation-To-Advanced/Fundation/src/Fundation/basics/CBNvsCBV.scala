@@ -31,4 +31,32 @@ object CBNvsCBV extends App {
 
   //printFirst(infinite(), 34)
   printFirst(34, infinite())
+
+  def trFac(n: Int, acc: Int = 1): Int = {
+    if (n <= 1) acc
+    else trFac(n - 1, n * acc)
+  }
+
+  val fact10 = trFac(10, 2)
+  println(fact10)
+
+  def savePicture(format: String = "jpg", width: Int = 1920, height: Int = 1080): Unit = println("saving picture")
+  savePicture(width = 800)
+
+  /**
+    * 1. pass in every leading argument
+    * 2. name the arguments
+    */
+  savePicture(height = 600, width = 800, format = "bmp")
+
+  /**
+    * When 99% of time we call a function with same params:
+     */
+  def greet(name: String = "Superman", age: Int = 10): String = {
+    s"Hi, I'm $name and I'm $age years old."
+  }
+  println(greet(age = 5))
+  println(greet(name="Sally", age = 5))
+  println(greet(age = 5, name = "dog"))
+
 }
