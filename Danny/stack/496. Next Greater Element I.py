@@ -5,26 +5,13 @@ class Solution:
         :type nums2: List[int]
         :rtype: List[int]
         """
-        def find_next_greater_element(nums, val):
-            '''
-            :type nums List[int]
-            :rtype: int
+        # Find the number using a stack
+        d = {}
+        stack = []
+        for i in nums2:
+            while len(stack) > 0 and stack[-1] < i:
+                # Pop and add to dict
+                d[stack.pop()] = i
+            stack.append(i)
             
-            Finds the next greater element within the given list
-            '''
-            for i in nums:
-                if i > val:
-                    return i
-            return None
-        
-        # Construct a dict {value: next greater value}
-        rel_dict = {}
-        for idx, val in enumerate(nums2):
-            rel_dict[val] = find_next_greater_element(nums2[idx:], val)
-        
-        res_list = []
-        for i in nums1:
-            res = rel_dict[i]
-            res_list.append(res if res else -1)
-        
-        return res_list
+        return [d[i] if i in d else -1 for i in nums1]
