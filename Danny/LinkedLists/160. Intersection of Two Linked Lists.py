@@ -10,22 +10,8 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        # Dirty footprint entire linked list A
-        backupA = headA
-        while headA:
-            headA.val = str(headA.val)
-            headA = headA.next
-        # Check if any of headB's nodes contain dirty footprint
-        target = None
-        while headB:
-            if type(headB.val) is str:
-                target = headB
-                break
-            headB = headB.next
-    
-        # Back to original int
-        while backupA:
-            backupA.val = int(backupA.val)
-            backupA = backupA.next
-            
-        return target
+        A, B = headA, headB
+        while A != B:
+            A = A.next if A else headB
+            B = B.next if B else headA
+        return A
