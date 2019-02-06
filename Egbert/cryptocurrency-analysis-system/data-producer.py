@@ -22,13 +22,82 @@ logging.basicConfig(format = logger_format)
 logger = logging.getLogger('data-producer')
 logger.setLevel(logging.DEBUG)
 
-
 def fetch_price(symbol, producer, topic_name):
-    logger.debug('Start to fetch price for %s'% symbol)
+    logger.debug('Start to fetch price for %s' % symbol)
     try:
         response = requests.get('%s/products/%s/ticker' % (API_BASE, symbol))
 
         price = response.json()['price']
+
         timestamp = time.time()
-        payload = {'Symbol':str(symbol)}
+        payload = {
+            'Symbol': str(symbol),
+            'LastTradePrice': str(price),
+            'LastTradeDateTime': str(timestamp)
+        }
+
+        logger.debug('Retrieved %s info %s', symbol, payload)
+
+        producer.send(topic = topic_name, value = json.dumps(payload), timestamp_ms = int(time.time() * 1000))
+        logger.debug('Sent price for %s to Kafka' % symbol)
+    except KafkaTimeoutError as timeout_error:
+        logger.warn('Failed to send price to kafka, casued by: connection')
+    except Exception as e:
+        logger.warn('Failed to fetch price: %s', (e)) 
+
+def shutdown_hook(producer):
+    try:
+        logger.info('Flushing pending messages to kafka, timeout is set to 10s')
+        producer.flush(10)
+        logger.info('Finish flushjing pending messages to kafka')
+    except KafkaError as kafka_error:
+        logger.warn('Failed to flush pending message to kafka, caused by: %s', kafka_error.invalid_metadata)
+    finally:
+        try:
+            logger.info('Closing kafka connection')
+            producer.close(10)
+        except Exception as e:
+            logger.warn('Failed to close kafka connection, caused by: connection issue')
+
+def check_symbol(symbol):
+    logger.debug('Checking symbol.')        
+    try:
+        response = requests.get(API_BASE + '/products')
+        product_ids = [product['id'] for product in response.json()]
+        if symbol not in product_ids:
+            logger.warn('Symbol %s not supported. The list of supported symbols: %s', symbol, product_ids)
+            exit()
+    except Exception as e:
+        logger.warn('Failed to fetch products')
+
+if __name__ == '__main__':
+    # Setup command line arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument('symbol', help = 'the symbol you want to pull')    
+    parser.add_argument('topic_name', help = 'the kafka topic push to')
+    parser.add_argument('kafka_broker', helper = 'the location of the kafka broker')
+
+    # Parse arguments    
+    args = parser.parse_args()
+    symbol = args.symbol
+    topic_name = args.topic_name
+    kafka_broker = args.args.kafka_broker
+
+    # Check if the symbol is supported.
+    check_symbol(symbol)
+
+    # Instantiate a simple kafka producer
+    producer = KafkaProducer (
+        bootstrap_servers = kafka_broker
+    )
+
+    # Schedule and run the fetch_price function every second
+    schedule.every(1).second.do(fetch_price, symbol, producer, topic_name)
+
+    # Setup proper shudown hook
+    atexit.register(shutdown_hook, producer)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
