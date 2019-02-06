@@ -5,6 +5,7 @@ import logging
 import requests
 import schedule
 import time
+import sys, os
 
 from kafka import KafkaProducer 
 from kafka.errors import KafkaError, KafkaTimeoutError 
@@ -23,6 +24,12 @@ logger = logging.getLogger('data-producer')
 logger.setLevel(logging.DEBUG)
 
 def fetch_price(symbol, producer, topic_name):
+    """
+    helper function to retrieve asset data and send it to kafka
+    :param symbol: the symbol of asset
+    :param producer: instance of a kafka producer
+    :return: None
+    """
     logger.debug('Start to fetch price for %s' % symbol)
     try:
         response = requests.get('%s/products/%s/ticker' % (API_BASE, symbol))
@@ -38,14 +45,25 @@ def fetch_price(symbol, producer, topic_name):
 
         logger.debug('Retrieved %s info %s', symbol, payload)
 
-        producer.send(topic = topic_name, value = json.dumps(payload), timestamp_ms = int(time.time() * 1000))
+        # there are trwo things required to return it into bytes -- serialize it to a string via JSON
+        # and then encode that bytes as UTF-8
+        producer.send(topic = topic_name, value = json.dumps(payload).encode('utf-8'), timestamp_ms = int(time.time() * 1000))
+
         logger.debug('Sent price for %s to Kafka' % symbol)
     except KafkaTimeoutError as timeout_error:
-        logger.warn('Failed to send price to kafka, casued by: connection')
+        logger.warn('Failed to send price to kafka, casued by: %s', timeout_error)
     except Exception as e:
-        logger.warn('Failed to fetch price: %s', (e)) 
+        logger.warn('Failed to fetch price: %s', e) 
+        exception_type, exception_obj, exception_tb = sys.exc_info()
+        fname = os.path.split(exception_tb.tb_frame.f_code.co_filename)[1]
+        print(exception_type, fname, exception_tb.tb_lineno)
 
 def shutdown_hook(producer):
+    """
+    a shutdown hook to be called before the shutdown
+    :param producer: instance of a kafka producer
+    :return None
+    """
     try:
         logger.info('Flushing pending messages to kafka, timeout is set to 10s')
         producer.flush(10)
@@ -60,6 +78,9 @@ def shutdown_hook(producer):
             logger.warn('Failed to close kafka connection, caused by: connection issue')
 
 def check_symbol(symbol):
+    """
+    helper method to check if the symbol exists in coinbase API
+    """
     logger.debug('Checking symbol.')        
     try:
         response = requests.get(API_BASE + '/products')
@@ -68,20 +89,20 @@ def check_symbol(symbol):
             logger.warn('Symbol %s not supported. The list of supported symbols: %s', symbol, product_ids)
             exit()
     except Exception as e:
-        logger.warn('Failed to fetch products')
+        logger.warn('Failed to fetch products: %s', e)
 
 if __name__ == '__main__':
     # Setup command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument('symbol', help = 'the symbol you want to pull')    
     parser.add_argument('topic_name', help = 'the kafka topic push to')
-    parser.add_argument('kafka_broker', helper = 'the location of the kafka broker')
+    parser.add_argument('kafka_broker', help = 'the location of the kafka broker')
 
     # Parse arguments    
     args = parser.parse_args()
     symbol = args.symbol
     topic_name = args.topic_name
-    kafka_broker = args.args.kafka_broker
+    kafka_broker = args.kafka_broker
 
     # Check if the symbol is supported.
     check_symbol(symbol)
