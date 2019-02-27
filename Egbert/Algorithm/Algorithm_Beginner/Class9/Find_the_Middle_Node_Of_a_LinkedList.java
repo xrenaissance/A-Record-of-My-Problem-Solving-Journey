@@ -9,21 +9,15 @@
  * }
  */
 public class Solution {
-  public ListNode findMiddleNode(ListNode head) {
-    int mid = getLength(head) / 2 + 1;
-    int i = 1;
-    ListNode curr = head;
-    while (i < mid) {
-      curr = curr.next;
-      i++;
+  public ListNode middleNode(ListNode head) {
+    if (head == null || head.next == null) {
+      return head; 
     }
-    return curr;
-  }
-  
-  private int getLength(ListNode head) {
-    if (head == null) {
-      return 0; 
+    ListNode slow = head, fast = head.next;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
     }
-    return 1 + getLength(head.next);
+    return slow;
   }
 }
