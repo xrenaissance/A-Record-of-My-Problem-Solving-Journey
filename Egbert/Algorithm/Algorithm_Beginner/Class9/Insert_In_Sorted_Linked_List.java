@@ -10,26 +10,23 @@
  */
 public class Solution {
   public ListNode insert(ListNode head, int value) {
-    if (head == null) {
-      return new ListNode(value); 
-    }
-    ListNode curr = head;
-    ListNode prev = null;
-    while (curr != null && value >= curr.value) {
-      prev = curr;
-      curr = curr.next;
+    if (head == null || value < head.value) {
+      ListNode newHead = new ListNode(value);
+      newHead.next = head;
+      return newHead;
     }
     
-    ListNode node = new ListNode(value);
-    if (prev == null) {
-      node.next = curr;
-      head = node;
-    } else if (prev != null && curr != null) {
-      prev.next = node;
-      node.next = curr;
-    } else {
-      prev.next = node; 
+    ListNode prev = null, curr = head;
+    while (curr != null) {
+      if (curr.value > value) {
+        break; 
+      } else {
+        prev = curr;
+        curr = curr.next;
+      }
     }
+    prev.next = new ListNode(value);
+    prev.next.next = curr;
     return head;
   }
 }
