@@ -8,60 +8,32 @@
  *   }
  * }
  */
+
+/**
+ * if you need to create new LinkedList, like 1 new linkedlist
+ * when you merge two linkedlists, or 2 new linkedlists when you
+ * partition a linked list
+ * */
 public class Solution {
   public ListNode merge(ListNode one, ListNode two) {
-    ListNode curr1 = one;
-    ListNode curr2 = two;
-    ListNode head = null;
-    ListNode curr = null;
-    while (curr1 != null && curr2 != null) {
-      if (curr1.value < curr2.value) {
-        ListNode node = new ListNode(curr1.value);
-        if (head == null) {
-          head = node;
-          curr = head;
-        } else {
-          curr.next = node;
-          curr = node;
-        }
-        curr1 = curr1.next;
+    ListNode dummyNode = new ListNode(1);
+    ListNode c1 = one, c2 = two, d = dummyNode;
+    while (c1 != null && c2 != null) {
+      if (c1.value < c2.value) {
+        d.next  = c1;
+        d = c1;
+        c1 = c1.next;
       } else {
-       ListNode node = new ListNode(curr2.value);
-       if (head == null) {
-         head = node;
-         curr = head;
-       } else {
-         curr.next = node;
-         curr = node;
-       }
-        curr2 = curr2.next;
+        d.next = c2;
+        d = c2;
+        c2 = c2.next;
       }
     }
-    
-    while (curr1 != null) {
-      ListNode node = new ListNode(curr1.value);
-      if (head == null) {
-        head = node;
-        curr = head;
-      } else {
-        curr.next = node;
-        curr = node;
-      }
-      curr1 = curr1.next;
+    if (c1 != null) {
+      d.next = c1; 
+    } else {
+      d.next = c2; 
     }
-    
-    while (curr2 != null) {
-      ListNode node = new ListNode(curr2.value);
-      if(head == null) {
-        head = node;
-        curr = head;
-      } else {
-        curr.next = node;
-        curr = node;
-      }
-      curr2 = curr2.next;
-    }
-    
-    return head;
+    return dummyNode.next;
   }
 }
