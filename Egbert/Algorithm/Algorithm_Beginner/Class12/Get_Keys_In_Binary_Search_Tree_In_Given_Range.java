@@ -10,9 +10,8 @@
  */
 public class Solution {
   public List<Integer> getRange(TreeNode root, int min, int max) {
-    List<Integer> result = new ArrayList<Integer>();
+    List<Integer> result = new LinkedList<Integer>();
     helper(root, result, min, max);
-    Collections.sort(result);
     return result;
   }
   
@@ -20,14 +19,15 @@ public class Solution {
     if (root == null) {
       return; 
     }
-    if (root.key > max) {
-      helper(root.left, result, min, max); 
-    } else if (root.key < min) {
-      helper(root.right, result, min, max);
-    } else {
-      result.add(root.key); 
-      helper(root.left, result, min, max);
-      helper(root.right, result, min, max);
+    if (root.key > min) {
+      helper(root.left, result, min, max);   
     }
+    if (root.key >= min && root.key <= max) {
+      result.add(root.key);
+    }
+    if (root.key < max) {
+      helper(root.right, result, min, max); 
+    }
+    
   }
 }
