@@ -15,7 +15,7 @@ public class PriorityQueue {
     private static int[] solution(int[] a, int k) {
         Queue<Integer> q = new java.util.PriorityQueue<>(new Comparator<Integer>() {
             public int compare(Integer o1, Integer o2) {
-                return o2 - o1;
+                return o2.compareTo(o1);
             }
         });
         for(int i : a)
