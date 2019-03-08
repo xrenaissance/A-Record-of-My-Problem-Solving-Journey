@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class ConnectCities {
+public class MinimalSpanningTree_ConnectCities {
     public static void main(String[] args) {
         List<List<Integer>> roadsAvailable = new ArrayList<List<Integer>>();
         List<Integer> roadAvail1 = new ArrayList<Integer>();
