@@ -1,19 +1,20 @@
 public class Solution {
-  
-  // O(n) + kLog(n)
   public int[] kSmallest(int[] array, int k) {
-    // O(n)
-    ArrayList<Integer> arrayCopy = new ArrayList<Integer>();
-    for (int elem : array) {
-      arrayCopy.add(elem); 
+    if (array.length == 0 || k == 0) {
+      return new int[0]; 
     }
     
-    // O(n)
-    PriorityQueue<Integer> pq = new PriorityQueue<Integer>(arrayCopy);
+    ArrayList<Integer> arrayCopy = new ArrayList<Integer>();
+    for (int elem: array) {
+      arrayCopy.add(elem);
+    }
+    PriorityQueue<Integer> miniHeap = new PriorityQueue<Integer>(k);
+    for (int i = 0; i < array.length; i++) {
+      miniHeap.offer(array[i]); 
+    }
     int[] result = new int[k];
-    for (int i = 0; i< k; i++) {
-      // O(logn)
-      result[i] = pq.poll(); 
+    for (int i = 0; i < k; i++) {
+      result[i] = miniHeap.poll();
     }
     return result;
   }
