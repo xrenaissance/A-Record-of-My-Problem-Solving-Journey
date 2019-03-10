@@ -1,6 +1,6 @@
 public class Solution {
   public int[] quickSort(int[] array) {
-    if (array == null || array.length == 0) {
+    if (array == null || array.length <= 1) {
       return array;
     }
     quickSort(array, 0, array.length - 1);
@@ -8,29 +8,27 @@ public class Solution {
   }
   
   private void quickSort(int[] array, int left, int right) {
-    if (left >= right) {
-      return;
-    }
+    if (left >= right) return;
     Random random = new Random();
     int randomIndex = random.nextInt(right - left + 1) + left;
     swap(array, randomIndex, right);
-    int i = left, j = right - 1;
-    while (i <= j) {
-      if (array[i] < array[right]) {
-        i++; 
+    int start = left, end = right - 1;
+    while (start <= end) {
+      if (array[start] <= array[right]) {
+        start++; 
       } else {
-        swap(array, i, j);
-        j--;
+        swap(array, start, end);
+        end--;
       }
     }
-    swap(array, i, right);
-    quickSort(array, left, i - 1);
-    quickSort(array, i + 1, right);
+    swap(array, start, right);
+    quickSort(array, left, start - 1);
+    quickSort(array, start + 1, right);
   }
   
-  private void swap(int[] array, int x, int y) {
-    int temp = array[x];
-    array[x] = array[y];
-    array[y] = temp;
+  private void swap(int[] array, int left, int right) {
+    int temp = array[left];
+    array[left] = array[right];
+    array[right] = temp;
   }
 }
