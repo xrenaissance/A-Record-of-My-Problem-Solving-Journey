@@ -14,14 +14,12 @@ public class LinkedListInsertAtIndex {
             index--;
         }
         ListNode newNode = new ListNode(value);
-        if (curr != head && curr != null) {
+        if (curr == head) {
+            newNode.next = head;
+            return newNode;
+        } else if (index == 0) {
             prev.next = newNode;
             newNode.next = curr;
-        } else if (curr == head) {
-            newNode.next = head;
-            head = newNode;
-        } else {
-            prev.next = newNode;
         }
         return head;
     }
