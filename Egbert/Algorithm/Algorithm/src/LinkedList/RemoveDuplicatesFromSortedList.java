@@ -5,14 +5,24 @@ public class RemoveDuplicatesFromSortedList {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode prev = head, curr = head;
+        ListNode dummyNode = new ListNode(1);
+        ListNode prev = null, curr = head, d = dummyNode;
         while (curr != null) {
-            while (curr != null && curr.value == prev.value) {
-                curr = curr.next;
-            }
-            prev.next = curr;
             prev = curr;
+            curr = curr.next;
+            if (curr != null) {
+                if (prev.value != curr.value) {
+                    d.next = prev;
+                    d = d.next;
+                } else {
+                    while (curr != null && curr.value == prev.value) {
+                        curr = curr.next;
+                    }
+                    prev = curr;
+                }
+            }
         }
-        return head;
+        d.next = prev;
+        return dummyNode.next;
     }
 }
