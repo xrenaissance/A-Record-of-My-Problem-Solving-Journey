@@ -25,5 +25,4 @@
 |8|[Check If Linked List Has A Cycle](https://app.laicode.io/app/problem/37)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/CheckIfLinkedListHasACycle.java)|100|20/Feb -> 15/March -> |
 |9|[Reverse Binary Tree Upside Down](https://app.laicode.io/app/problem/1789)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/ReverseBinaryTreeUpsideDown.javava)|80|I wrote in both Iterative way and recursive way, It's same as reverse linked list  15/March -> |
 |10|[Reverse Linked List](https://app.laicode.io/app/problem/34)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/ReverseLinkedList.java)|100|24/Feb -> 15/March -> |
-
 |11|[Check If Linked List Is Palindrome](https://app.laicode.io/app/problem/306)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/CheckIfLinkedListIsPalindrome.java)|100|Still slow and fast pointers   16/March -> |
