@@ -17,7 +17,7 @@
 |---|-------------| ----- |----|---------|
 |1|[Linked List At Index](https://app.laicode.io/app/problem/366)|[Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/LinkedListInsertAtIndex.java)|100|12/March - > |
 |2|[Indert In Sorted Linked List](https://app.laicode.io/app/problem/39)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/InsertInSortedLinkedList.java)|80|15/March -> |
-|3|[Delete Node At Index(https://app.laicode.io/app/problem/319)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/DeleteNodeAtIndexIterative.java)|80|11/March -> |
+|3|[Delete Node At Index](https://app.laicode.io/app/problem/319)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/DeleteNodeAtIndexIterative.java)|80|11/March -> |
 |4|[Delete Nodes At Indices](https://app.laicode.io/app/problem/39)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/DeleteNodeAtIndexIterative.java)|80|11/March -> |
 |5|[Remove Linked List Elements](https://app.laicode.io/app/problem/414)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/RemoveLinkedListElemens.java)|80|12/March -> |
 |6|[Rotate List by K places](https://app.laicode.io/app/problem/166)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/RotateListByKPlaces.java)|80|13/March -> |
