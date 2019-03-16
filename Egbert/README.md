@@ -28,3 +28,5 @@
 |11|[Check If Linked List Is Palindrome](https://app.laicode.io/app/problem/306)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/CheckIfLinkedListIsPalindrome.java)|100|Still slow and fast pointers   16/March -> |
 |12|[Merge K Sorted Lists](https://app.laicode.io/app/problem/134)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/MergeKSortedLists.java)|100|Dummy Head and minHeap for maintaining the Order   16/March -> |
 |13|[ReOrder Linked List](https://app.laicode.io/app/problem/41)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/ReOrderLinkedList.java)|100|Not hard Dummy + reverse lsit + Mergering,NPE is hell!!!    16/March -> |
+
+|14|[Deep Copy Linked List With Random Pointer](https://app.laicode.io/app/problem/131)| [Java](https://github.com/xrenaissance/We.Rush/blob/master/Egbert/Algorithm/Algorithm/src/LinkedList/DeepCopyLinkedListWithRandomPointer.java)|100|Using HashMap keep mirrors,elegant solution.    16/March -> |
