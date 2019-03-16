@@ -5,18 +5,14 @@ public class CheckIfLinkedListIsPalindrome {
         if (head == null || head.next == null) {
             return true;
         }
-        ListNode slow = head, fast = head;
+        ListNode slow = head, fast = head.next;
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-
-        // if number of nodes if odd
-        if (fast != null) {
-            slow = slow.next;
-        }
-        slow = reverse(slow);
+        slow = slow.next;
         fast = head;
+        slow = reverse(slow);
         while (slow != null) {
             if (fast.value != slow.value) {
                 return false;
