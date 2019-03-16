@@ -19,6 +19,7 @@ public class DeepCopyLinkedListWithRandomPointer {
         while (curr != null) {
             records.get(curr).next = records.get(curr.next);
             records.get(curr).random = records.get(curr.random);
+            curr = curr.next;
         }
         // return mirror head
         return records.get(head);
