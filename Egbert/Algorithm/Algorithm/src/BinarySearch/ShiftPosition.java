@@ -1,5 +1,11 @@
 package BinarySearch;
 
+/**
+ * @author  Egbert Li
+ * @Date 20/March/2019
+ * left may not exist, always compare to right
+ * Time complexity is O(log n), Space complexity is O(1)
+ */
 public class ShiftPosition {
     public int shiftPosition(int[] array) {
         if (array == null || array.length == 0) {
