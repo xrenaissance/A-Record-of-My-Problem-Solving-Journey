@@ -23,4 +23,26 @@ public class RainbowSortII {
         }
         return array;
     }
+
+    // Solution 2, using counting sort
+    public int[] rainbowSortII(int[] array) {
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        rainbowSortII(array, 4);
+        return array;
+    }
+    private void rainbowSortII(int[] array, int k) {
+        int[] count = new int[k];
+        for (int color : array) {
+            count[color]++;
+        }
+        int index = 0;
+        for (int color = 0; color < k; color++) {
+            for (int t = 0; t < count[color]; t++) {
+                array[index] = color;
+                index++;
+            }
+        }
+    }
 }
