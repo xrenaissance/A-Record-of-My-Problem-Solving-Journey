@@ -13,12 +13,12 @@ public class MissingNumberI {
 
     // using sum difference to get missing number
     public int missingNumberSolution2(int[] nums) {
+        int n = array.length + 1;
+        int sum = ((1 + n) * n) / 2;
         int sumArray = 0;
-        int sumLength = 0;
         for (int i = 0; i < nums.length; i++) {
             sumArray += nums[i];
-            sumLength += i;
         }
-        return sumLength + nums.length - sumArray;
+        return sum - sumArray;
     }
 }
