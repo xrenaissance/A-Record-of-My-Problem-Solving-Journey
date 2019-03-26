@@ -29,6 +29,9 @@ public class StackWithMinPairSolution {
         public F getValue() {
             return this.value;
         }
+        public void setValue(F value) {
+            this.value = value;
+        }
     }
 
     public int pop() {
@@ -43,7 +46,7 @@ public class StackWithMinPairSolution {
     }
 
     public void push(int element) {
-        if (minStack.isEmpty() || element <= minStack.peek().getKey()) {
+        if (minStack.isEmpty() || element < minStack.peek().getKey()) {
             minStack.push(new Pair<>(element, stack.size()));
         }
         stack.push(element);
