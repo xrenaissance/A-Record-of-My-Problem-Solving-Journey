@@ -5,16 +5,17 @@ public class DeleteNodeAtIndexIterative {
         if (head == null || index < 0) {
             return head;
         }
-        ListNode prev = null, curr = head;
+        if (index == 0) {
+            return head.next;
+        }
+        ListNode curr = head, prev = null;
         while (curr != null && index > 0) {
             prev = curr;
             curr = curr.next;
             index--;
         }
-        if (curr != head && curr != null) {
+        if (curr != null) {
             prev.next = curr.next;
-        } else if (curr == head) {
-            return head.next;
         }
         return head;
     }
