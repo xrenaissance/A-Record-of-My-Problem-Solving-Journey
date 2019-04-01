@@ -1,80 +1,70 @@
 package Sorting;
 import LinkedList.ListNode;
+
+/**
+ * @author Egbert Li
+ * @date 2/04/2019
+ * Time Complexity: average O (3 n) * log n ---> O(n log n), worst (3 * n) * n --> O(n ^ 2)
+ * Space Complexity: O(1)
+ */
 public class QuickSortLinkedList {
     public ListNode quickSort(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode pivotNode = findMid(head);
-        ListNode newHead = partition(head, pivotNode);
+        ListNode leftHalf = new ListNode(-1);
+        ListNode midNode = new ListNode(0);
+        ListNode rightHalf = new ListNode(1);
+        ListNode left = leftHalf;
+        ListNode mid = midNode;
+        ListNode right = rightHalf;
+        int pivot = head.value;
 
-        ListNode prevNode = findNode(newHead, pivotNode);
-        ListNode pivotNext = pivotNode.next;
-        prevNode.next = null;
+        while (head != null) {
+            if (head.value < pivot) {
+                left.next = head;
+                left = head;
+            } else if (head.value > pivot) {
+                right.next = head;
+                right = head;
+            } else {
+                mid.next = head;
+                mid = head;
+            }
+            head = head.next;
+        }
+        left.next = null;
+        right.next = null;
+        mid.next = null;
 
-        ListNode firstHalf = head;
-        ListNode secondHalf = pivotNext;
+        ListNode leftSorted = quickSort(leftHalf.next);
+        ListNode rightSorted = quickSort(rightHalf.next);
 
-        ListNode sortedFirstHalf = quickSort(firstHalf);
-        ListNode sortedSecondHalf = quickSort(secondHalf);
-        ListNode firstHalfTail = findTail(sortedFirstHalf);
-        firstHalfTail.next = pivotNode;
-        pivotNode.next = sortedSecondHalf;
-
-        return sortedFirstHalf;
+        return merge(leftSorted, midNode.next, rightSorted);
     }
 
-    private ListNode findTail(ListNode head) {
+    // merge left, mid and right O(n)
+    private ListNode merge(ListNode leftHalf, ListNode midNode, ListNode rightHalf) {
+        ListNode leftTail = getTail(leftHalf); // O(n/2)
+        ListNode midTail = getTail(midNode); // O(n/2)
+        midTail.next = rightHalf;
+        // O(1)
+        if (leftTail != null) {
+            leftTail.next = midNode;
+            return leftHalf;
+        } else {
+            return midNode;
+        }
+    }
+
+    // get tail of linked list O(n)
+    private ListNode getTail(ListNode head) {
+        if (head == null) {
+            return head;
+        }
         while (head.next != null) {
             head = head.next;
         }
         return head;
-    }
-
-    private ListNode findNode (ListNode head, ListNode target) {
-        ListNode prevNode = null;
-        ListNode currNode = head;
-        while (currNode != null) {
-            if (currNode.value == target.value) {
-                return currNode;
-            }
-            prevNode = currNode;
-            currNode = currNode.next;
-        }
-        return prevNode;
-    }
-
-    private ListNode partition(ListNode head, ListNode target) {
-        ListNode dummyHead = new ListNode(0);
-        ListNode smallDummy = new ListNode(-1);
-        ListNode largeDummy = new ListNode(1);
-        ListNode dummy = dummyHead;
-        ListNode small = smallDummy;
-        ListNode large = largeDummy;
-        ListNode curr = head;
-        while (curr != null) {
-            if (curr.value <= target.value) {
-                small.next = curr;
-                small = curr;
-            } else {
-                large.next = curr;
-                large = curr;
-            }
-            curr = curr.next;
-        }
-        small.next = largeDummy.next;
-        return smallDummy.next;
-    }
-    private ListNode findMid(ListNode head) {
-        if (head == null || head.next == null) {
-            return head;
-        }
-        ListNode slow = head;
-        ListNode fast = head.next;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        return slow;
     }
 }
