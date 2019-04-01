@@ -5,6 +5,11 @@ public class BinaryTreeDiameter {
         if (root == null || root.left == null && root.right == null) {
             return 0;
         }
+        if (root.left == null) {
+            return diameter(root.right);
+        } else if (root.right == null) {
+            return diameter(root.left);
+        }
         int diameter = height(root.left) + height(root.right) + 1;
         int left = diameter(root.left);
         int right = diameter(root.right);
