@@ -5,8 +5,46 @@ public class QuickSortLinkedList {
         if (head == null || head.next == null) {
             return head;
         }
+        ListNode pivotNode = findMid(head);
+        ListNode newHead = partition(head, pivotNode);
+
+        ListNode prevNode = findNode(newHead, pivotNode);
+        ListNode pivotNext = pivotNode.next;
+        prevNode.next = null;
+
+        ListNode firstHalf = head;
+        ListNode secondHalf = pivotNext;
+
+        ListNode sortedFirstHalf = quickSort(firstHalf);
+        ListNode sortedSecondHalf = quickSort(secondHalf);
+        ListNode firstHalfTail = findTail(sortedFirstHalf);
+        firstHalfTail.next = pivotNode;
+        pivotNode.next = sortedSecondHalf;
+
+        return sortedFirstHalf;
     }
-    private partition(ListNode head, ListNode target) {
+
+    private ListNode findTail(ListNode head) {
+        while (head.next != null) {
+            head = head.next;
+        }
+        return head;
+    }
+
+    private ListNode findNode (ListNode head, ListNode target) {
+        ListNode prevNode = null;
+        ListNode currNode = head;
+        while (currNode != null) {
+            if (currNode.value == target.value) {
+                return currNode;
+            }
+            prevNode = currNode;
+            currNode = currNode.next;
+        }
+        return prevNode;
+    }
+
+    private ListNode partition(ListNode head, ListNode target) {
         ListNode dummyHead = new ListNode(0);
         ListNode smallDummy = new ListNode(-1);
         ListNode largeDummy = new ListNode(1);
