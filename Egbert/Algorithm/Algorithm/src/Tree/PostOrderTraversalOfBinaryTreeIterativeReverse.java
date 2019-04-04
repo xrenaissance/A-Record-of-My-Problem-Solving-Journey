@@ -8,6 +8,7 @@ import java.util.Collections;
 /**
  * @author Egbert Li
  * @date 4/4/2019
+ * Reversed pre-order traversal, then reverse the result
  * Time complexity: O (n)
  * Space complexity O (height)
  */
