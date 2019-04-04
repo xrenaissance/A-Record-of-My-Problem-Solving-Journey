@@ -10,7 +10,7 @@ import java.util.Collections;
  * @date 4/4/2019
  * Reversed pre-order traversal, then reverse the result
  * Time complexity: O (n)
- * Space complexity O (height)
+ * Space complexity O (n)
  */
 public class PostOrderTraversalOfBinaryTreeIterativeReverse {
     public List<Integer> postOrder(TreeNode root) {
@@ -19,6 +19,7 @@ public class PostOrderTraversalOfBinaryTreeIterativeReverse {
             return result;
         }
         Deque<TreeNode> stack = new ArrayDeque<>();
+        Deque<TreeNode> reversed = new ArrayDeque<>();
         stack.offerLast(root);
         while (!stack.isEmpty()) {
             TreeNode currNode = stack.pollLast();
@@ -28,9 +29,11 @@ public class PostOrderTraversalOfBinaryTreeIterativeReverse {
             if (currNode.right != null) {
                 stack.offerLast(currNode.right);
             }
-            result.add(currNode.key);
+            reversed.offerLast(currNode);
         }
-        Collections.reverse(result);
+        while (!reversed.isEmpty()) {
+            result.add(reversed.pollLast().key);
+        }
         return result;
     }
 }
