@@ -3,15 +3,17 @@ package Tree;
 /**
  * @author Egbert Li
  * @date 3/04/2019
+ * Second time 4/4/2019
  * Time Complexity: O (height)
  * Space Complexity: O(height)
  */
 public class DeleteInBinarySearchTree {
     public TreeNode deleteTree(TreeNode root, int key) {
         if (root == null) {
-            return null;
+            return root;
         }
-        // find target node
+
+        // guranteed root != null
         if (root.key > key) {
             root.left = deleteTree(root.left, key);
             return root;
@@ -19,37 +21,38 @@ public class DeleteInBinarySearchTree {
             root.right = deleteTree(root.right, key);
             return root;
         }
-        // guarantee root != null && roo.val == target
+
+        // found the node
+        // case1: root.left == null -> return root.right
+        // case 2: root.right == null --> return root.left
+        // case 3: 1 and 2 solved root.left == null && root.right == null --> return null
         if (root.left == null) {
             return root.right;
         } else if (root.right == null) {
             return root.left;
         }
 
-        // guarantee root.left != null && guarantee root.right != null
-        // 4.1
+        // now we guranteed that root.left != null && root.right != null
+        // case 4.1 root.right.left == null
         if (root.right.left == null) {
             root.right.left = root.left;
             return root.right;
         }
-
-        // 4.2
-        // 1. find and delete smallest node in root.right
+        // case 4.2
         TreeNode smallest = deleteSmallest(root.right);
-        // 2. connect the smallest node with root.left and root.right
+        // then connect root.left and root.right
         smallest.left = root.left;
         smallest.right = root.right;
         return smallest;
     }
-
-    private TreeNode deleteSmallest(TreeNode currNode) {
-        TreeNode prev = currNode;
-        currNode = currNode.left;
+    private TreeNode deleteSmallest(TreeNode rootRight) {
+        TreeNode currNode = rootRight.left;
+        TreeNode prevNode = rootRight;
         while (currNode.left != null) {
-            prev = currNode;
+            prevNode = currNode;
             currNode = currNode.left;
         }
-        prev.left = currNode.right;
+        prevNode.left = currNode.right;
         return currNode;
     }
 }
