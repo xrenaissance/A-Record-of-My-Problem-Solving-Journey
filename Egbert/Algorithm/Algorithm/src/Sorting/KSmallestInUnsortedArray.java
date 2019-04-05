@@ -19,6 +19,7 @@ public class KSmallestInUnsortedArray {
         Arrays.sort(result); // k log k
         return result;
     }
+    // only get ordered of top k
     private void quickSelect(int[] array, int left, int right, int k) {
         if (left >= right) {
             return;
@@ -32,6 +33,7 @@ public class KSmallestInUnsortedArray {
             quickSelect(array, left, pivotIndex - 1, k);
         }
     }
+    // get pivot index
     private int partition(int[] array, int left, int right) {
         Random random = new Random();
         int randomIndex = random.nextInt(right - left + 1) + left;
@@ -49,6 +51,7 @@ public class KSmallestInUnsortedArray {
         swap(array, start, right);
         return start;
     }
+    // swap two element in an array
     private void swap(int[] array, int left, int right) {
         int temp = array[left];
         array[left] = array[right];
