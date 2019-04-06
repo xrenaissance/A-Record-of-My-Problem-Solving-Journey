@@ -5,8 +5,8 @@ import java.util.Comparator;
 /**
  * @author Egbert Li
  * @date 7/4/2019
- * Time complexity: 2 * O( (k-1) log k)  --->O ( k log k)
- * Space complexity : O(k)
+ * Time complexity: 2 * O( k log k) + lok k  --->3 * O ( k log k)
+ * Space complexity : O(2 * k) at most
  */
 public class KthSmallestNumberInSortedMatrix {
     public int kthSmallest(int[][] matrix, int k) {
