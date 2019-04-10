@@ -1,9 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        int[] test = new int[]{0, 1, 6, 9, 5, 3, 2, -4, -5};
-        int result = SearchInBitonicArray.findMax(test);
-        System.out.println(result);
+        char[] input = new char[]{'a', 'b', 'c'};
+        PermutationTest.permutation(input, 0);
+        //int value = SmallestDenominator.findSmallest((float) 0.4, 52);
+        //System.out.println(value);
+//        int[] test = new int[]{0, 1, 6, 9, 5, 3, 2, -4, -5};
+//        int result = SearchInBitonicArray.findMax(test);
+//        System.out.println(result);
     }
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
