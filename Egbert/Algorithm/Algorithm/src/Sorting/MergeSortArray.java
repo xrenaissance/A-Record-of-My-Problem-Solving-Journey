@@ -6,7 +6,6 @@ package Sorting;
  * Time Complexity: O(1 + 2 + 4 + n/2) + O(n * log n) = O(n log n)
  * Space Complexity: O(n)
  */
-public class MergeSortArray {
     public int[] mergeSort(int[] array) {
         if (array == null || array.length == 0) {
             return array;
@@ -26,7 +25,9 @@ public class MergeSortArray {
         for (int i = left; i <= right; i++) {
             helper[i] = array[i];
         }
-
+        merge(array, helper, left, mid, right);
+    }
+    private void merge(int[] array, int[] helper, int left, int mid, int right) {
         int i = left;
         int j = mid + 1;
         int index = left;
