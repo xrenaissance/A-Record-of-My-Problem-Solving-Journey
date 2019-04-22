@@ -13,6 +13,8 @@ public class MaxProductOfCuttingRope {
 
     // 左大段，右大段
     // m[i] = {i, j, 0 <= j < i <= n | max(j, m[j]) * max(i - j, m[i - j]))
+    // Time: O(N ^ 2)
+    // Space: O(N)
     public int maxProductSol1(int length) {
         // records[i] = max()
         // 0 1 2 3 4 5 6 7 8 9 10
