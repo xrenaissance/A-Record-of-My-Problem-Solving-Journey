@@ -18,8 +18,7 @@ public class ArrayHopperIII {
                 minJump[i] = 1;
             } else {
                 for (int j = array[i]; j >= 1; j--) {
-                    if (minJump[i + j] > 0 && (minJump[i] == 0 ||
-                            minJump[i + j] + 1 < minJump[i])) {
+                    if (minJump[i + j] > 0 && (minJump[i + j] + 1 < minJump[i] || minJump[i] == 0)) {
                         minJump[i] = minJump[i + j] + 1;
                     }
                 }
