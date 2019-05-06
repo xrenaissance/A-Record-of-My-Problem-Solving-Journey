@@ -1,7 +1,7 @@
 package ParkingLot;
 
 public enum VehicleSize {
-    Compart(1),
+    Compact(1),
     Large(2);
     private final int size;
     VehicleSize(int size) {

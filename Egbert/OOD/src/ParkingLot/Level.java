@@ -8,7 +8,7 @@ public class Level {
         List<ParkingSpot> list = new ArrayList<>(numOfSpots);
         int i = 0;
         for (; i < numOfSpots / 2; i++) {
-            list.add(new ParkingSpot(VehicleSize.Compart));
+            list.add(new ParkingSpot(VehicleSize.Compact));
         }
         for (; i < numOfSpots; i++) {
             list.add(new ParkingSpot(VehicleSize.Large));
