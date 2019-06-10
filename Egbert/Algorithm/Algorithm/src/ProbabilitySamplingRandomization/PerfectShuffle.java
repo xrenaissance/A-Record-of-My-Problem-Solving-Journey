@@ -1,5 +1,11 @@
 package ProbabilitySamplingRandomization;
 
+/**
+ * @author Egbert Li
+ * @date 4/06/2019
+ * @Time
+ */
+import java.util.Random;jj
 public class PerfectShuffle {
     // Iteration 1: call random(0 - 51) -> let's say, random_number = 5, call swap(5, 51)
     // P(every card can showup in position 51) = 1/52
@@ -24,6 +30,19 @@ public class PerfectShuffle {
             swap(array, i - 1, index);
         }
     }
+
+    public void shuffleRandomInt(int[] array) {
+        if (array == null || array.length <= 1) {
+            return;
+        }
+        Random random = new Random();
+        for (int i = 1; i < array.length; i++) {
+            int index = random.nextInt(i + 1);
+            swap(array, i,  index);
+        }
+    }
+
+
     private void swap(int[] array, int left, int right) {
         int temp = array[left];
         array[left] = array[right];
