@@ -1,15 +1,20 @@
 package SlidingWindow;
 import java.util.*;
-public class LongestSubstringKDistinct {
 
+/**
+ * @author Egbert Li
+ * @date 15/06/2019
+ * @Time O (n + n)
+ * @space O(k + 1) at most
+ */
+public class LongestSubstringKDistinct {
     public static int findLength(String str, int k) {
         if (str == null || str.length() == 0) {
             return 0;
         }
-        Map<Character, Integer> charFrequencyMap = new HashMap<>();
         int windowStart = 0;
         int longest = 0;
-        // int the following loop we'll try to extend th erange [windowStart, windowEnd]
+        Map<Character, Integer> charFrequencyMap = new HashMap<>();
         for (int windowEnd = 0; windowEnd < str.length(); windowEnd++) {
             char rightChar = str.charAt(windowEnd);
             charFrequencyMap.put(rightChar, charFrequencyMap.getOrDefault(rightChar, 0) + 1);
@@ -17,9 +22,9 @@ public class LongestSubstringKDistinct {
                 char leftChar = str.charAt(windowStart);
                 charFrequencyMap.put(leftChar, charFrequencyMap.get(leftChar) - 1);
                 if (charFrequencyMap.get(leftChar) == 0) {
-                    charFrequencyMap.remove(leftChar);
+                   charFrequencyMap.remove(leftChar);
                 }
-                windowStart++; // shrink the window
+                windowStart++;
             }
             longest = Math.max(longest, windowEnd - windowStart + 1);
         }
