@@ -20,7 +20,7 @@ public class MinimumWindowSubstring {
             char rightChar = str.charAt(windowEnd);
             if (charFrequencyMap.containsKey(rightChar)) {
                 charFrequencyMap.put(rightChar, charFrequencyMap.get(rightChar) - 1);
-                if (charFrequencyMap.get(rightChar) == 0) // count every matching of a character
+                if (charFrequencyMap.get(rightChar) >= 0) // count every matching of a character
                     matched++;
             }
 
