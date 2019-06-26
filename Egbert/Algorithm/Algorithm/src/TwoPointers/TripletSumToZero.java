@@ -1,5 +1,13 @@
 package TwoPointers;
 import java.util.*;
+
+/**
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6210874538721280
+ * @author Egbert Li
+ * @date 25/06/2019
+ * @Time O N log N + N ^ 2
+ * @Space O N
+ */
 public class TripletSumZero {
     public static List<List<Integer>> searchTriplets(int[] arr) {
         List<List<Integer>> allTriplets = new ArrayList<>();
