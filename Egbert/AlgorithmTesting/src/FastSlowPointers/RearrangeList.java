@@ -1,5 +1,13 @@
 package FastSlowPointers;
 import java.util.List;
+
+/**
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6429532024209408
+ * @author Egbert Li
+ * @date 4/07/2019
+ * @Time O N
+ * @Space O 1
+ */
 public class RearrangeList {
     public static void reorder(ListNode head) {
         if (head == null || head.next == null) {
