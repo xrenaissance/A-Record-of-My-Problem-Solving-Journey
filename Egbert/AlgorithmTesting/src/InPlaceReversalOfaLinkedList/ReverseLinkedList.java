@@ -9,7 +9,7 @@ package InPlaceReversalOfaLinkedList;
  */
 public class ReverseLinkedList {
     public static ListNode reverse(ListNode head) {
-        if (head != null) {
+        if (head == null) {
             return head;
         }
         ListNode prev = null;
