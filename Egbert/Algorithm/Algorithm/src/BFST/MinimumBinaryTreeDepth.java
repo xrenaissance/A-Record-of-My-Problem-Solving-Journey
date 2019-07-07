@@ -5,11 +5,26 @@ import java.util.*;
  * @leetcode https://leetcode.com/problems/minimum-depth-of-binary-tree/
  * @author Egbert Li
  * @date 7/7/2019
- * @Time O N
- * @Space O 1
+ * @Time BFS -> O N  | DFS -> O N
+ * @Space BFS -> O N/2 | DFS -> O height
  */
 public class MinimumBinaryTreeDepth {
+    // Solution 1: DFS
     public static int findDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = findDepth(root.left);
+        int right = findDepth(root.right);
+        if (left == 0 || right == 0) {
+            return left + right + 1;
+        } else {
+            return Math.min(left, right) + 1;
+        }
+    }
+
+    // Solution 2: BFS
+    public static int findDepthBFS(TreeNode root) {
         if (root == null) {
             return 0;
         }
