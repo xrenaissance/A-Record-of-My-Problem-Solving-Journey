@@ -12,7 +12,27 @@ import java.util.Queue;
  * @Space O N/2
  */
 public class RightViewTree {
+    // Solution 1: DFS
     public static List<TreeNode> traverse(TreeNode root) {
+        List<TreeNode> result = new ArrayList<>();
+        traverseDFS(root, result, 0);
+        return result;
+    }
+    private static void traverseDFS(TreeNode root,
+                                    List<TreeNode> result,
+                                    int depth) {
+        if (root == null) {
+            return;
+        }
+        if (depth == result.size()) {
+            result.add(root);
+        }
+        traverseDFS(root.right, result, depth + 1);
+        traverseDFS(root.left, result, depth + 1);
+    }
+
+    // Solution 2: BFS
+    public static List<TreeNode> traverseBFS(TreeNode root) {
         List<TreeNode> result = new ArrayList<>();
         if (root == null) {
             return result;
