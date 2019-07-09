@@ -15,6 +15,25 @@ import java.util.Queue;
 public class LeftViewTree {
     public static List<TreeNode> traverse(TreeNode root) {
         List<TreeNode> result = new ArrayList<>();
+        traverseDFS(root, result, 0);
+        return result;
+    }
+    private static void traverseDFS(TreeNode root,
+                                    List<TreeNode> result,
+                                    int depth) {
+        if (root == null) {
+            return;
+        }
+        if (depth == result.size()) {
+            result.add(root);
+        }
+        traverseDFS(root.left, result, depth + 1);
+        traverseDFS(root.right, result, depth + 1);
+    }
+
+    // Solution 2: BFS
+    public static List<TreeNode> traverseBFS(TreeNode root) {
+        List<TreeNode> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
