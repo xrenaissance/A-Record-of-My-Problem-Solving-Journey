@@ -8,8 +8,8 @@ import java.util.ArrayList;
  * @leetcode https://leetcode.com/problems/path-sum-ii/
  * @author Egbert Li
  * @date 10/7/2019
- * @Time O N
- * @Space
+ * @Time O N log N worst
+ * @Space N log N worst
  */
 public class FindAllTreePaths {
     public static List<List<Integer>> findPathsDFS(TreeNode root, int sum) {
