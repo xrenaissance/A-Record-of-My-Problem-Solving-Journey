@@ -18,10 +18,10 @@ public class MaximizeCapital {
         }
         int length = capital.length;
         PriorityQueue<Integer> minCapitalHeap = new PriorityQueue<>(
-            length, (a, b) -> Integer.compare(capital[a], capital[b])
+                length, (a, b) -> Integer.compare(capital[a], capital[b])
         );
         PriorityQueue<Integer> maxProfitHeap = new PriorityQueue<>(
-            length, (a, b) -> Integer.compare(profits[b], profits[a])
+                length, (a, b) -> Integer.compare(profits[b], profits[a])
         );
 
         // N log N
