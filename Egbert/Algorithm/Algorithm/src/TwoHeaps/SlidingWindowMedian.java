@@ -10,43 +10,56 @@ package TwoHeaps;
  */
 import java.util.*;
 public class SlidingWindowMedian {
-    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b.compareTo(a));
-    PriorityQueue<Integer> minHeap = new PriorityQueue<>();
     public double[] findSlidingWindowMedian(int[] nums, int k) {
-        double[] result = new double[nums.length - k + 1];
-        if (nums == null || k > nums.length) {
+        if (nums == null || nums.length == 0) {
             return new double[0];
         }
+        double[] result = new double[nums.length - k + 1];
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b.compareTo(a));
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (int i = 0; i < nums.length; i++) {
-            if (maxHeap.size() == 0 || nums[i] < maxHeap.peek()) {
-                maxHeap.offer(nums[i]);
-            } else {
-                minHeap.offer(nums[i]);
-            }
-            rebalanceHeaps();
+            insertNum(nums[i], maxHeap, minHeap);
+            rebalance(maxHeap, minHeap);
             if (i - k + 1 >= 0) {
-                if (maxHeap.size() == minHeap.size()) {
-                    result[i - k + 1] = maxHeap.peek() / 2.0 + minHeap.peek() / 2.0;
-                } else {
-                    result[i - k + 1] = maxHeap.peek();
-                }
-                // remove the element going out of the sliding window
-                int elementToBeRemoved = nums[i - k + 1];
-                if (elementToBeRemoved <= maxHeap.peek()) {
-                    maxHeap.remove(elementToBeRemoved);
-                } else {
-                    minHeap.remove(elementToBeRemoved);
-                }
-                rebalanceHeaps();
+                result[i - k + 1] = getMedian(maxHeap, minHeap);
+                int numNeedToBeRemoved = nums[i - k + 1];
+                moveWindow(numNeedToBeRemoved, maxHeap, minHeap);
+                rebalance(maxHeap, minHeap);
             }
         }
         return result;
     }
-    public void rebalanceHeaps() {
+    private void moveWindow(int num, PriorityQueue<Integer> maxHeap,
+                            PriorityQueue<Integer> minHeap) {
+        if (num <= maxHeap.peek()) {
+            maxHeap.remove(num);
+        } else {
+            minHeap.remove(num);
+        }
+    }
+    private void insertNum(int num,
+                           PriorityQueue<Integer> maxHeap,
+                           PriorityQueue<Integer> minHeap) {
+        if (maxHeap.size() == 0 || num < maxHeap.peek()) {
+            maxHeap.offer(num);
+        } else {
+            minHeap.offer(num);
+        }
+    }
+    private void rebalance(PriorityQueue<Integer> maxHeap,
+                           PriorityQueue<Integer> minHeap) {
         if (maxHeap.size() > minHeap.size() + 1) {
             minHeap.offer(maxHeap.poll());
         } else if (maxHeap.size() < minHeap.size()) {
             maxHeap.offer(minHeap.poll());
+        }
+    }
+    private double getMedian(PriorityQueue<Integer> maxHeap,
+                             PriorityQueue<Integer> minHeap) {
+        if (maxHeap.size() == minHeap.size()) {
+            return maxHeap.peek() / 2.0 + minHeap.peek() / 2.0;
+        } else {
+            return maxHeap.peek();
         }
     }
     public static void main(String[] args) {
