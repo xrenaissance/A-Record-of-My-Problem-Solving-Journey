@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/5728885882748928
  * @leetcode https://leetcode.com/problems/kth-largest-element-in-an-array/
- * @Time minHeap: (N+k)logk
+ * @Time minHeap: k + (n - k) log k
  * @Space k
  */
 public class KLargestNumbers {
