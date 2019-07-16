@@ -15,14 +15,15 @@ public class SortCharactersByFrequency {
         // N
         Map<Character, Integer> charFreqMap = getCharFreqMap(s);
         PriorityQueue<Map.Entry<Character, Integer>> maxHeap = new PriorityQueue<>(charFreqMap.size(),
-                (a, b) -> a.getValue() == b.getValue() ?
+                (a, b) -> a.getValue().equals(b.getValue()) ?
                         Character.compare(a.getKey(), b.getKey()) :
                         b.getValue().compareTo(a.getValue())
         );
         // N log N
-        for (Map.Entry<Character, Integer> entry : charFreqMap.entrySet()) {
-            maxHeap.offer(entry);
-        }
+        maxHeap.addAll(charFreqMap.entrySet());
+        //for (Map.Entry<Character, Integer> entry : charFreqMap.entrySet()) {
+        //    maxHeap.offer(entry);
+        //}
         StringBuilder result = new StringBuilder();
         // N log N
         while (!maxHeap.isEmpty()) {
