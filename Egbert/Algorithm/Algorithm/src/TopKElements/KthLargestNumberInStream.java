@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 /**
  * @leetcode https://leetcode.com/problems/kth-largest-element-in-a-stream/
  * @date 16/7/2019
- * @Time add log N
+ * @Time add log k
  * @Space k
  */
 public class KthLargestNumberInStream {
