@@ -29,8 +29,8 @@ public class SquareSum {
                 result[i] = arr[right] * arr[right];
                 right++;
             } else if (left >= 0) {
-               result[i] = arr[left] * arr[left];
-               left--;
+                result[i] = arr[left] * arr[left];
+                left--;
             }
         }
         return result;
