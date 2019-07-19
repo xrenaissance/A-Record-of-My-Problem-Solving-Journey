@@ -13,6 +13,16 @@ import java.util.List;
  * @Ttime N log N
  * @Space D + N   D = number of distinct tasks, N is total number
  */
+//The expression can be simplified into
+//        Math.max(tasks.length,maxCount+(n+1)*(max-1)),
+//        which means normal case
+//        it's (n+1)*(max-1)+maxCount with idling but if
+//        task length is long enough, you don't have to wait and it's just tasks.length.
+//
+//        More specifically:
+//        (n+1) is the length of each idling iteration.
+//        (max-1) is the number of idling iterations
+//        maxCount is the length of last iteration to finish out remaining tasks
 public class TaskScheduler {
     public static int scheduleTasks(char[] tasks, int k) {
         if (tasks == null || tasks.length == 0) {
