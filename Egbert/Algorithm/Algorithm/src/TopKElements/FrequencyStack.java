@@ -7,7 +7,8 @@ import java.util.PriorityQueue;
 /**
  * @leetcode https://leetcode.com/problems/maximum-frequency-stack/
  * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6223867750121472
- *
+ * @Time log N for both operations
+ * @Space O 2 * N
  */
 public class FrequencyStack {
     public PriorityQueue<Element> maxHeap = new PriorityQueue<>(
@@ -20,10 +21,12 @@ public class FrequencyStack {
     );
     public Map<Integer, Integer> numFreq = new HashMap<>();
     public int sequenceNumber;
+    // log N
     public void push(int num) {
         numFreq.put(num, numFreq.getOrDefault(num, 0) + 1);
         maxHeap.offer(new Element(num, numFreq.get(num), this.sequenceNumber++));
     }
+    // log N
     public int pop() {
         int num = maxHeap.poll().number;
         if (numFreq.get(num) > 1) {
