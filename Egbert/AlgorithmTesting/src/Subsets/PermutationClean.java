@@ -8,7 +8,7 @@ import java.util.List;
  * @Time n!
  * @Spac n
  */
-public class Permutations {
+public class PermutationClean {
     // BFS
     public static List<List<Integer>> findPermutations(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
@@ -38,26 +38,15 @@ public class Permutations {
                                      int level, List<List<Integer>> result) {
         if (level == nums.length) {
             result.add(new ArrayList<>(currLayer));
-            System.out.println("---------------------------------------------");
+            //System.out.println("---------------------------------------------");
             return;
         }
         for (int i = level; i < nums.length; i++) {
-            System.out.println("i: " + i + "   " +
-                    "nums[i]: " + nums[i] + "  " + " level: " + level +
-                    "  nums[level]: " + nums[level]);
-            swap(nums, i, level);
-            System.out.println("After Swap: ");
-            System.out.println("i: " + i + "   " +
-                    "nums[i]: " + nums[i] + "  " + " level: " + level +
-                    "  nums[level]: " + nums[level] + "\n");
-            currLayer.add(nums[level]);
+            currLayer.add(nums[i]);
+            swap(nums, level, i);
             permutations(nums, currLayer, level + 1, result);
-            System.out.print("Before remove: " + currLayer.toString() + " ");
             currLayer.remove(currLayer.size() - 1);
-            System.out.print("After remove: " + currLayer.toString() + "\n");
             swap(nums, i, level);
-            for (int j = 0; j < nums.length; j++) System.out.print(nums[j] + " ");
-            System.out.println();
         }
     }
     private static void swap(int[] nums, int left,int right) {
@@ -66,7 +55,7 @@ public class Permutations {
         nums[right] = temp;
     }
     public static void main(String[] args) {
-        List<List<Integer>> result = Permutations.findPermutationsDFS(new int[] { 1, 3, 5 });
+        List<List<Integer>> result = PermutationClean.findPermutationsDFS(new int[] { 1, 3, 5 });
         System.out.print("Here are all the permutations: " + result);
     }
 }
