@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * @leetcode https://leetcode.com/problems/brace-expansion/
  * @date 23/7/2019
  * @Time max(sublist) ^ size of individual list
- * @Space size of individual list
+ * @Space size of individual list + unique number of Strings
  */
 public class BraceExpansion {
     // Solution 1: With List of String and sorting
