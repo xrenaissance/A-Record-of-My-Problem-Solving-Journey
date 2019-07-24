@@ -1,9 +1,5 @@
 package Subsets;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
-
+import java.util.*;
 /**
  * @leetcode https://leetcode.com/problems/combination-sum-ii/
  * @date 23/7/2019
@@ -35,12 +31,12 @@ public class CombinationSumII {
         // add num in current level
         currLayer.add(candidates[level]);
         combinDFS(candidates, target - candidates[level],
-                  level + 1, currLayer, result);
+                level + 1, currLayer, result);
         currLayer.remove(currLayer.size() - 1);
 
         // don't add num in current level and skip repeated num
         while (level + 1 < candidates.length &&
-               candidates[level] == candidates[level + 1]) {
+                candidates[level] == candidates[level + 1]) {
             level++;
         }
         combinDFS(candidates, target, level + 1, currLayer, result);
