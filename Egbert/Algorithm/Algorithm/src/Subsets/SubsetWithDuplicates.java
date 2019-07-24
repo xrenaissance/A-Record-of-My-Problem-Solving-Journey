@@ -61,6 +61,29 @@ public class SubsetWithDuplicates {
         }
         findSubsets(nums, curLayer, level + 1, subsets);
     }
+    // Solution 3: Using general dfs pattern
+    public List<List<Integer>> subsetsWithDupGDFS(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
+        List<Integer> currLayer = new ArrayList<>();
+        Arrays.sort(nums);
+        gdfs(nums, 0, currLayer, result);
+        return result;
+    }
+    private void gdfs(int[] nums, int currLevel, List<Integer> currLayer,
+                      List<List<Integer>> result) {
+        result.add(new ArrayList<>(currLayer));
+        for (int i = currLevel; i < nums.length; i++) {
+            if (i > currLevel && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            currLayer.add(nums[i]);
+            gdfs(nums, i + 1, currLayer, result);
+            currLayer.remove(currLayer.size() - 1);
+        }
+    }
     public static void main(String[] args) {
         List<List<Integer>> result = SubsetWithDuplicates.findSubsets(new int[] { 1, 3, 3 });
         System.out.println("Here is the list of subsets: " + result);
