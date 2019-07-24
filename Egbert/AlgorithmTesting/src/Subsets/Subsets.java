@@ -51,6 +51,25 @@ public class Subsets {
         // don't add element in current layer
         findSubsets(nums, currLayer, level + 1, subsets);
     }
+    // Solution 3 : general dfs pattern
+    public List<List<Integer>> subsetsGDFS(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
+        List<Integer> currLayer = new ArrayList<>();
+        gdfs(nums, 0, currLayer, result);
+        return result;
+    }
+    private void gdfs(int[] nums, int currLevel, List<Integer> currLayer,
+                     List<List<Integer>> result) {
+        result.add(new ArrayList<>(currLayer));
+        for (int i = currLevel; i < nums.length; i++) {
+            currLayer.add(nums[i]);
+            gdfs(nums, i + 1, currLayer, result);
+            currLayer.remove(currLayer.size() - 1);
+        }
+    }
     public static void main(String[] args) {
         List<List<Integer>> result = Subsets.findSubsets(new int[] { 1, 3 });
         System.out.println("Here is the list of subsets: " + result);
