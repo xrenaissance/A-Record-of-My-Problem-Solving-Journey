@@ -3,8 +3,9 @@ import java.util.*;
 
 /**
  * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/5796496094003200
+ * @leetcode https://leetcode.com/problems/4sum/
  * @author Egbert Li
- * @date 30/06
+ * @date 30/06 -> 26/7/2019
  * @Time NlogN + N ^ 3
  * @Space O N
  */
