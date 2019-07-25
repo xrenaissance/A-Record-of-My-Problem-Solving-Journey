@@ -2,9 +2,10 @@ package TwoPointers;
 import java.util.*;
 
 /**
- * @author https://www.educative.io/collection/page/5668639101419520/5671464854355968/6210874538721280
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6210874538721280
+ * @leetcode https://leetcode.com/problems/4sum/
  * @author Egbert Li
- * @date 27/06/2019
+ * @date 27/06/2019 -> 26/7/2019
  * @Time O N * log N + N ^ 2
  * @Space O N
  */
