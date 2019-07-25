@@ -10,6 +10,13 @@ package LinkedList;
  *   }
  * }
  */
+
+/**
+ * @leetcode https://leetcode.com/problems/remove-linked-list-elements/
+ * @date 26/7/2019
+ * @Time N
+ * @Space 1
+ */
 public class RemoveLinkedListElemens {
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) {
