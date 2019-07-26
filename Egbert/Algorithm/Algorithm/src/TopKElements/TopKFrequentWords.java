@@ -13,8 +13,8 @@ public class TopKFrequentWords {
             new ArrayList<String>();
         }
         PriorityQueue<Map.Entry<String, Integer>> minHeap = new PriorityQueue<>(
-                k, (a, b) -> a.getValue().compareTo(b.getValue()) == 0 ?
-                b.getKey().compareTo(a.getKey()) : a.getValue().compareTo(b.getValue())
+                k, (a, b) -> a.getValue() - b.getValue() == 0 ?
+                b.getKey().compareTo(a.getKey()) : a.getValue() - b.getValue()
         );
         Map<String, Integer> freqMap = getFreqMap(words);
         List<String> topK = new LinkedList<>();
