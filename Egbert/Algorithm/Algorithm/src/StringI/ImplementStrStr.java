@@ -1,15 +1,19 @@
-package StringI;
+package String;
 
 /**
  * @leetcode https://leetcode.com/problems/implement-strstr/
  * @date 26/07/2019
  * @Time m * n
  * @Space 1
+ *
+ * Follow up:
+ * What should we return when needle is an empty string?
+ * This is a great question to ask during an interview.
  */
 public class ImplementStrStr {
     public int strStr(String haystack, String needle) {
         if (haystack == null || needle == null) {
-            return -1;
+            return 0;
         }
         int sourceLength = haystack.length();
         int targetLength = needle.length();
