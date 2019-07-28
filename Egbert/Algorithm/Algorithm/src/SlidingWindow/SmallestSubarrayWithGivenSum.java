@@ -1,10 +1,10 @@
 package SlidingWindow;
 
 /**
- * @author Egbert Li
- * @date 13/06/2019
- * @Time O(n)
- * @Space O(1)
+ * @leetcode https://leetcode.com/problems/minimum-size-subarray-sum/
+ * @date 28/7/2019
+ * @Time n
+ * @Space 1
  */
 public class SmallestSubarrayWithGivenSum {
     public static int findMinSubArray(int S, int[] arr) {
