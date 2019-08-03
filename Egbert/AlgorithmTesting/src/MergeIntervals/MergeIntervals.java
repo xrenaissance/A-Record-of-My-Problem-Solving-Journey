@@ -34,4 +34,38 @@ public class MergeIntervals {
         intervals[slow][1] = end;
         return Arrays.copyOf(intervals, slow + 1);
     }
+    /**
+     * @param intervals: interval list.
+     * @return: A new interval list.
+     */
+    public List<Interval> merge(List<Interval> intervals) {
+        List<Interval> result = new ArrayList<>();
+        if (intervals == null || intervals.size() == 0) {
+            return result;
+        }
+        Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
+        int start = intervals.get(0).start;
+        int end = intervals.get(0).end;
+        for (int i = 1; i < intervals.size(); i++) {
+            Interval interval = intervals.get(i);
+            int currStart = interval.start;
+            int currEnd = interval.end;
+            if (currStart <= end) {
+                end = Math.max(end, currEnd);
+            } else {
+                result.add(new Interval(start, end));
+                start = currStart;
+                end = currEnd;
+            }
+        }
+        result.add(new Interval(start, end));
+        return result;
+    }
+    public static class Interval {
+        int start, end;
+        Interval(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+    }
 }
