@@ -1,14 +1,15 @@
 package Math;
-import java.util.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @leetcode https://leetcode.com/problems/strobogrammatic-number/
+ * @Time n
+ * @Space 1
  */
 public class StrobogrammaticNumber {
     public boolean isStrobogrammatic(String num) {
-        if (num == null || num.length() == 0) {
-            return true;
-        }
         Map<Character, Character> map = new HashMap<>();
         map.put('6', '9');
         map.put('9', '6');
@@ -18,14 +19,11 @@ public class StrobogrammaticNumber {
         int left = 0;
         int right = num.length() - 1;
         while (left <= right) {
-            if (map.get(num.charAt(left)) == null) {
+            char leftChar = num.charAt(left++);
+            char rightChar = num.charAt(right--);
+            if (map.get(leftChar) == null || map.get(leftChar) != rightChar) {
                 return false;
             }
-            if (map.get(num.charAt(left)) != num.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
         }
         return true;
     }
