@@ -1,6 +1,8 @@
-package FastSlowPointers;
-import java.util.Set;
+package Math;
+
 import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/5315930441646080
  * @leetcode https://leetcode.com/problems/happy-number/
@@ -55,7 +57,7 @@ public class HappyNumber {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println(HappyNumber.find(23));
-        System.out.println(HappyNumber.find(12));
+        System.out.println(FastSlowPointers.HappyNumber.find(23));
+        System.out.println(FastSlowPointers.HappyNumber.find(12));
     }
 }
