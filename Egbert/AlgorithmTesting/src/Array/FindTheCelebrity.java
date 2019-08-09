@@ -7,6 +7,15 @@ package Array;
  * @Time N
  * @Space 1
  */
+// it is inductive that we can find the candidate and check whether
+// it is up to standard or not.
+// How do we decide the candidate?
+// We are sure that if A knows B, A cannot be the celebrity while B may be,
+// i.e., B is the candidate. Since there is only one celebrity,
+// one loop is enough to decide the candidate.
+// How do we check whether the candidate is up to standard?
+// According to the definition of a celebrity,
+// if !knows(i, candidate) || knows(candidate, i) exists, the candidate is not qualified.0
 public class FindTheCelebrity {
     public int findCelebrity(int n) {
         int celebrity = 0;
