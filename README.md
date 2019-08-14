@@ -102,10 +102,10 @@ Initialization, Find, Union
          ```java
          public int find(int x) {
             if (father[x] == x) {
-         	   return x;
-         	}
-         	father[x] = find(father[x]);
-         	return father[x];
+               return x;
+            }
+            father[x] = find(father[x]);
+            return father[x];
          }
          ```
          
