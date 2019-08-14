@@ -76,11 +76,11 @@ Initialization, Find, Union
 
          ```java
          public void union(int a, int b) {
-         	a = find(a);
-           b = find(b);
-           if (a != b) {
-             father[a] = b;
-           }
+            a = find(a);
+            b = find(b);
+            if (a != b) {
+               father[a] = b;
+            }
          }
          ```
 
