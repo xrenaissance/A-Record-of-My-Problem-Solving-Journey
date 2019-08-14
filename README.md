@@ -12,10 +12,22 @@ Patterns for Coding Questions
 ##### [K-Way Merge](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#k-way-merge-1)
 ##### [Two Pointers](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-pointers-1)
 ##### [Slow and Faster Pointer](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#slow-and-faster-pointer-1)
+##### [LinkedList]
+##### [Trees]
+##### [Cyclic Sort]
+##### [Binary Search]
+##### [Merge Intervals]
+##### [Dynamic Programming(DP)]
+##### [Tries]
 ##### [Topological Sort](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#topological-sort-1)
 ##### [Two Heaps](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-heaps-1)
 ##### [Math](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#math-1)
 ##### [Bit Operations](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#bit-operations-1)
+##### [Data Structure Design And Implementation(Tries,HashMap,HashSet,ArrayToTree,Iterator)]
+##### [Concurrency And Threads]
+##### [OOD]
+##### [System Design]
+##### [Behavior Questions' Answer Template]
 
 <br></br>
 ###### [My Daily Coding Records](https://docs.google.com/spreadsheets/d/13oGqFxjJ6pWtuuxWlrWnczDdw-d1yoPx1T9U3GFxDCM/edit#gid=0)
