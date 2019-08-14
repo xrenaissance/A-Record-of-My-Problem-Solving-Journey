@@ -54,7 +54,7 @@ Initialization, Find, Union
    }
    ```
 
-   2. Find
+  2. Find
 
       To find which set this element belongs to, that means find its boss! This is also the basics we merge two sets.
 
@@ -70,7 +70,7 @@ Initialization, Find, Union
       }
       ```
 
-      3. Union
+     3. Union
 
          Merge two different sets, aka b becomes the boss of a.
 
