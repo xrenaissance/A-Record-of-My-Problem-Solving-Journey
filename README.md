@@ -119,7 +119,7 @@ Initialization, Find, Union
 
 Then a linked list becomes everyone points to boss.
 
-![SummaryDocs/uf-1.png](SummaryDocs/uf-7.png)
+      ![SummaryDocs/uf-1.png](SummaryDocs/uf-7.png)
 
 So amortiezed time complexity of find is O(1), same as union, O(1) as well.
 
