@@ -5,17 +5,17 @@ Patterns for Coding Questions
 #### Table Of Content
 ##### [Union Find](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#union-find)
 ##### [BFS](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#breadth-first-searchbfs)
-##### [Subsets(DFS)]
-##### [Sliding Window]
-##### [Top K Elements]
-##### [Sweep Line]
-##### [K-Way Merge]
-##### [Two Pointers]
-##### [Slow and Faster Pointer]
-##### [Topological Sort]
-##### [Two Heaps]
-##### [Math]
-##### [Bit Operations]
+##### [Subsets(DFS)](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#subsetsdfs-1)
+##### [Sliding Window](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sliding-window-1)
+##### [Top K Elements]()
+##### [Sweep Line](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sweep-line-1)
+##### [K-Way Merge](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#k-way-merge-1)
+##### [Two Pointers](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-pointers-1)
+##### [Slow and Faster Pointer](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#slow-and-faster-pointer-1)
+##### [Topological Sort](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#topological-sort-1)
+##### [Two Heaps](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-heaps-1)
+##### [Math](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#math-1)
+##### [Bit Operations](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#bit-operations-1)
 
 <br></br>
 ###### [My Daily Coding Records](https://docs.google.com/spreadsheets/d/13oGqFxjJ6pWtuuxWlrWnczDdw-d1yoPx1T9U3GFxDCM/edit#gid=0)
@@ -162,10 +162,18 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 
 ### Sweep Line
 
+### Top K Elements
+
 ### K-Way Merge
+
 ### Two Pointers
+
 ### Slow and Faster Pointer
+
 ### Topological Sort
+
 ### Two Heaps
+
 ### Math
+
 ### Bit Operations
