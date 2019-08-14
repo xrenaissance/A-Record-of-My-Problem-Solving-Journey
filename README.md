@@ -54,7 +54,7 @@ Initialization, Find, Union
    }
    ```
 
-  2. Find
+  2. Find (Time complexity: O(1))
 
       To find which set this element belongs to, that means find its boss! This is also the basics we merge two sets.
 
@@ -70,7 +70,7 @@ Initialization, Find, Union
       }
       ```
 
-   3. Union
+   3. Union (Time Complexity(1))
 
          Merge two different sets, aka b becomes the boss of a.
 
@@ -84,4 +84,55 @@ Initialization, Find, Union
          }
          ```
 
+         #### The time complexity of compressed union find.
          
+         Union Find without compressing path
+         
+         ```java
+         public int find(int x) {
+         		if (father[x] == x) {
+             		return x;
+             }
+           	return find(father[x]);
+         } 
+         ```
+         
+         Union Find with compressing path.
+         
+         ```java
+         public int find(int x) {
+         		if (father[x] == x) {
+         				return x;
+         		}
+         		father[x] = find(father[x]);
+         		return father[x];
+         }
+         ```
+         
+         The idea of compressing path
+         
+         Assuming there is a path, A -> B -> Z -> Y -> W, we want to know who's the boss of A, we have to go though A, B,Z,Y then W,  so every time, for each node has to go though again, aka redundant computation.
+         
+         The follwing graph shows how compressed path works.
+         
+          ![SummaryDocs/uf-1.png](SummaryDocs/uf-6.png)
+
+Then a linked list becomes everyone points to boss.
+
+![SummaryDocs/uf-1.png](SummaryDocs/uf-7.png)
+
+So amortiezed time complexity of find is O(1), same as union, O(1) as well.
+
+##### Questions which are solved via Union Find
+
+Leetcode 130 Surrounded Regions
+
+Leetcode 200 Number of Islands
+
+Leetcdoe 305 Number of Islands 305
+
+Leetcode 261 Graph valid Tree
+
+Leetcode 547 Friend Circles
+
+Leetcode 1135 Connecting Cities With Minimum Cost 
