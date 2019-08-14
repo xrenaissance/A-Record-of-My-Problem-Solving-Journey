@@ -90,9 +90,9 @@ Initialization, Find, Union
          
          ```java
          public int find(int x) {
-         		if (father[x] == x) {
-             		return x;
-             }
+         	if (father[x] == x) {
+             	return x;
+            }
            	return find(father[x]);
          } 
          ```
@@ -101,11 +101,11 @@ Initialization, Find, Union
          
          ```java
          public int find(int x) {
-         		if (father[x] == x) {
-         				return x;
-         		}
-         		father[x] = find(father[x]);
-         		return father[x];
+         	if (father[x] == x) {
+         	   return x;
+         	}
+         	father[x] = find(father[x]);
+         	return father[x];
          }
          ```
          
