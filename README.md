@@ -2,6 +2,22 @@
 
 Patterns for Coding Questions
 
+## Table Of Content
+   ##### [Union Find](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#union-find)
+   ##### [BFS](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#breadth-first-searchbfs)
+   ##### [Subsets(DFS)]
+   ##### [Sliding Window]
+   ##### [Top K Elements]
+   ##### [Sweep Line]
+   ##### [Two Pointers]
+   ##### [Slow and Faster Pointer]
+   ##### [Topological Sort]
+   ##### [Two Heaps]
+   ##### [Math]
+   ##### [Bit Operations]
+   ##### [K-Way Merge]
+   
+
 ###### [My Daily Coding Records](https://docs.google.com/spreadsheets/d/13oGqFxjJ6pWtuuxWlrWnczDdw-d1yoPx1T9U3GFxDCM/edit#gid=0)
 
 ## Getting Started
