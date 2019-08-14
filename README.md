@@ -115,11 +115,11 @@ Initialization, Find, Union
          
          The follwing graph shows how compressed path works.
          
-          ![SummaryDocs/uf-1.png](SummaryDocs/uf-6.png)
+![SummaryDocs/uf-1.png](SummaryDocs/uf-6.png)
 
 Then a linked list becomes everyone points to boss.
 
-      ![SummaryDocs/uf-1.png](SummaryDocs/uf-7.png)
+![SummaryDocs/uf-1.png](SummaryDocs/uf-7.png)
 
 So amortiezed time complexity of find is O(1), same as union, O(1) as well.
 
