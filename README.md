@@ -70,7 +70,7 @@ Initialization, Find, Union
       }
       ```
 
-  3. Union
+   3. Union
 
          Merge two different sets, aka b becomes the boss of a.
 
