@@ -118,7 +118,7 @@ Initialization, Find, Union
          ```
          
          Union Find with compressing path.
-         
+         Recursion
          ```java
          public int find(int x) {
             if (father[x] == x) {
@@ -128,7 +128,23 @@ Initialization, Find, Union
             return father[x];
          }
          ```
-         
+         Iteratioin
+         ```java
+         public int find(int x) {
+            int parent = father[x];
+            while (parent != father[parent]) {
+               parent = father[parent];
+            }
+            int temp = -1;
+            int boss = x;
+            while (boss != father[boss]) {
+               temp = father[boss];
+               father[boss] = parent;
+               boss = temp;
+            }
+            return parent;
+         }
+         ```
          The idea of compressing path
          
          Assuming there is a path, A -> B -> Z -> Y -> W, we want to know who's the boss of A, we have to go though A, B,Z,Y then W,  so every time, for each node has to go though again, aka redundant computation.
