@@ -215,11 +215,9 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 
 ### Data Structure Design And Implementation(Tries,HashMap,HashSet,ArrayToTree,Iterator)
 
-   #### 	1. Two types of Questions about data structure
-
-   #### 	2. HashTable: a. Theory b. Applications
-
-   ##### 	3. Heap: a. Theory b. Applications - PriorityQueue c. Alternatives - TreeMap
+#### 1. Two types of Questions about data structure
+#### 2. HashTable: a. Theory b. Applications
+#### 3. Heap: a. Theory b. Applications - PriorityQueue c. Alternatives - TreeMap
 
 
 
