@@ -151,6 +151,7 @@ Initialization, Find, Union
          
          The follwing graph shows how compressed path works.
          
+
 ![SummaryDocs/uf-1.png](SummaryDocs/uf-6.png)
 
 Then a linked list becomes everyone points to boss.
@@ -213,6 +214,14 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 ### Bit Operations
 
 ### Data Structure Design And Implementation(Tries,HashMap,HashSet,ArrayToTree,Iterator)
+
+#### 1. Two types of Questions about data structure
+
+#### 2. HashTable: a. Theory b. Applications
+
+##### 3. Heap: a. Theory b. Applications - PriorityQueue c. Alternatives - TreeMap
+
+
 
 ### Concurrency And Threads
 
