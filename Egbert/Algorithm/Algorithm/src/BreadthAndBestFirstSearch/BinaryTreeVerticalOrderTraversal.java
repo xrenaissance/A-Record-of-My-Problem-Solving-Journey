@@ -5,6 +5,12 @@ import java.util.*;
  * @leetcode https://leetcode.com/problems/binary-tree-vertical-order-traversal/
  * @Time n  n = number of nodes
  * @Space worst case 2 ^ height
+ *
+ * 1. at root, position is 0
+ * 2. at any node, for left node position - 1, right position + 1
+ * 3. follow the above rules, level traversal all of nodes
+ * 4. position from min to max to output the result
+ * Map could be TreeMap, but every time get and add is log n
  */
 public class BinaryTreeVerticalOrderTraversal {
     /**
