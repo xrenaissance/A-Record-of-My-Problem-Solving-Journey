@@ -16,8 +16,15 @@ public class WordLadder {
      * @param dict: a set of string
      * @return: An integer
      */
+    /*
+     * @param start: a string
+     * @param end: a string
+     * @param dict: a set of string
+     * @return: An integer
+     */
     public int ladderLength(String start, String end, Set<String> dict) {
         Queue<String> queue = new LinkedList<>();
+        // get all possible selections for each position
         Map<Integer, Set<Character>> selections = new HashMap<>();
         int length = start.length();
         for (String str : dict) {
@@ -37,12 +44,15 @@ public class WordLadder {
         while (!queue.isEmpty()) {
             int size = queue.size();
             dist++;
+            // level order traversal
             for (int i = 0; i < size; i++) {
                 String currString = queue.poll();
+                // get all possible state for all possible selections at each position
                 for (int k = 0; k < length; k++) {
                     for (Character ch : selections.get(k)) {
-                        String next = currString.substring(0,k) +
-                                ch + currString.substring(k + 1);
+                        char[] array = currString.toCharArray();
+                        array[k] = ch;
+                        String next = new String(array);
                         if (next.equals(end)) {
                             return dist;
                         }
@@ -54,7 +64,7 @@ public class WordLadder {
                 }
             }
         }
-        return dist;
+        return 0;
     }
     public static void main(String[] args) {
         Map<Integer, Set<Character>> map = new HashMap<>();
