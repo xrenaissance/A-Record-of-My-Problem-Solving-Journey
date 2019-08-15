@@ -128,7 +128,7 @@ Initialization, Find, Union
             return father[x];
          }
          ```
-         Iteratioin
+         Iteration
          ```java
          public int find(int x) {
             int parent = father[x];
