@@ -209,7 +209,7 @@ Kafka Json format
 ```
 #### Examples of Serialization
 * we have an int array, full of integers, we can simply serialize to "[1,2,3]"
-* For a Linked List, we serialize to "1-<2->3"
+* For a Linked List, we serialize to "1->2->3"
 * HashMap, we can serialize to "{\"key\":\"value\"}"
 
 **The factors while we design an algorithm of serialization**
