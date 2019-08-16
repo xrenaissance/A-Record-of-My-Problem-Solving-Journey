@@ -161,7 +161,7 @@ Then a linked list becomes everyone points to boss.
 So amortiezed time complexity of find is O(1), same as union, O(1) as well.
 
 ##### Questions which are solved via Union Find
-
+```
 Leetcode 130 Surrounded Regions
 
 Leetcode 200 Number of Islands
@@ -173,7 +173,7 @@ Leetcode 261 Graph valid Tree
 Leetcode 547 Friend Circles
 
 Leetcode 1135 Connecting Cities With Minimum Cost 
-
+```
 
 ### Breadth First Search(BFS)
 #### **Applications**: Binary Tree BFS, Graph BFS, Topological Sort, Grid(Board) BFS
