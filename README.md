@@ -225,7 +225,50 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 
 * Implement algorithms via one/more data structure
 
-  
+#### Common data structures
+* Linear data structure, normally implemented by array, e.g. Queue(LinkedList, ArrayDeque),Stack(Deque),Hash
+* Tree data structure, normally reference, e.g binary tree(left, right), graph(nodes, List<Node>), Neary-Tree(node,List<Node>)
+* Queue: BFS -> O(1) offer, poll, peek
+* Stack: DFS -> O(1) offerLast, pollLast, peekLast
+
+#### Hash
+Time Complexity:
+   * Add O(keySize)
+   * Search(Contains) O(keySize)
+   * Remove O(keySize)
+If size of key is 4 bytes, then Time complexity of add,search, and remove is O(4) -> O(1)
+#### HashTable vs HashMap vs HashSet
+   * HashSet only has key no value, it's not ordered, all of keys are unique. -> normally for remove duplicated data
+   * HashTabe is thread safe, multiple threads can call one HashTable
+   * HashMap doesn't support thread safe,it will mess up if multiple threads call one HashMap. PS: Because lock and unlock is very slow, so HashTable is slower.
+
+#### Hash Function/Hash Code
+Target: For any key, it'll transfer to an integer that is in 0 ~ capacity - 1
+Understanding: HashMap can be regarded as a huge array, hash function is to find the index, and save the (k,v) to the array.
+![SummaryDocs/uf-1.png](SummaryDocs/hash1.jpg)
+
+#### **Hash Algorithm**
+MD5 SHA-1 SHA2 is to complicated, except that,
+* 1. char -> 255 Integer
+* 2. Simplely get modulus, e.g. key % 31 to transfer 31进制, 31为经验值
+   ** mutiply the 经验值 and then get modulus, just for checking corner case
+   ** java and c++ will automatically get rid of the cases which are not valid
+```java
+   public int hashFunc(String key) {
+      int sum = 0;
+      for (int i = 0; i < key.length(); i++) {
+         sum = sum * 31 + (int)(key.charAt(i));
+         sum = sum % HASH_TABLE_SIZE;
+      }
+      return sum;
+   }
+```
+Normally hash function is designed to solve string, which is char, since any other data type can be transfer to char.
+e.g. int is 4 bytes, which is 4 chars
+double is 8 bytes, which is 8 chars
+If class has 2 int and 1 double, then it's will be = 8 + 8 string.
+
+
 
 ### Concurrency And Threads
 
