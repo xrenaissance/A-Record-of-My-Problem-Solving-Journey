@@ -219,11 +219,11 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 #### 2. HashTable: a. Theory b. Applications
 #### 3. Heap: a. Theory b. Applications - PriorityQueue c. Alternatives - TreeMap
 
-Types of Question About Data Structures:
+**Types of Question About Data Structures:**
 
-* **Design a data structure**
+* Design a data structure
 
-* **Implement algorithms via one/more data structure**
+* Implement algorithms via one/more data structure
 
   
 
