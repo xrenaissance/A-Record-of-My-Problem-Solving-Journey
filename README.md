@@ -8,6 +8,7 @@ Patterns for Coding Questions
 ##### [Subsets(DFS)](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#subsetsdfs-1)
 ##### [Sliding Window](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sliding-window-1)
 ##### [Top K Elements](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#top-k-elements-1)
+##### [Merge Intervals]()
 ##### [Sweep Line](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sweep-line-1)
 ##### [K-Way Merge](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#k-way-merge-1)
 ##### [Two Pointers](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-pointers-1)
@@ -231,6 +232,8 @@ An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following stru
 ### Subsets(DFS)
 
 ### Sliding Window
+
+### Merge Intervals
 
 ### Sweep Line
 
