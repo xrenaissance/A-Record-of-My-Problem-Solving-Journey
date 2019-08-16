@@ -313,11 +313,19 @@ The size of the hash table is not determinate at the very beginning. If the tota
 ```
 #### Stanadar: if actual overtaked space is over 10%, then we need to rehashing
 ```
-size是实际被占的，如果实际被占的空间超过十分之一，冲突率太高。如果数组需要开的更大，就需要开一个更大的数组，并且把原来的小的copy过去，类似于动态数组，但是很多时候hash function就会变，所以最好不要轻易折腾，举个栗子：
+size是实际被占的，如果实际被占的空间超过十分之一，冲突率太高。
+如果数组需要开的更大，就需要开一个更大的数组，并且把原来的小的copy过去，
+类似于动态数组，但是很多时候hash function就会变，所以最好不要轻易折腾，举个栗子：
 
 本来有[4,1,2,3]四个数，其中他们的位置按照%4得到的
 
-我们要扩充数组到八个坑，我们开八个坑，要把1,2,3,4挪过去。但是这次1,2,3,4要根据%8来找他们的位置，而不是直接copy过去，所以增加了不少计算量
+我们要扩充数组到八个坑，我们开八个坑，要把1,2,3,4挪过去。
+但是这次1,2,3,4要根据%8来找他们的位置，而不是直接copy过去，所以增加了不少计算量
+```
+#### Hash reconstruction
+```
+因为哈希表只膨胀， 不收缩， 所以对于是不是加一个又删一个的操作， 
+就要偶尔destroy了再重建一个
 ```
 
 ### Concurrency And Threads
