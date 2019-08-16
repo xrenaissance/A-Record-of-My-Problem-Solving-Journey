@@ -213,8 +213,20 @@ Kafka Json format
 * HashMap, we can serialize to "{\"key\":\"value\"}"
 
 **The factors while we design an algorithm of serialization**
-* 1.Compression rate. Regards the newtworking transfer cost and storage cost, of course we want to less, Thrift,ProtoBuf are Designed to for faster networking transfering data and saving storage.
-* 2. Readability. For developer, after serialization we can easily understand what the raw data looks like. e.g. Json, Leetcode input data.
+* Compression rate. Regards the newtworking transfer cost and storage cost, of course we want to less, Thrift,ProtoBuf are Designed to for faster networking transfering data and saving storage.
+* Readability. For developer, after serialization we can easily understand what the raw data looks like. e.g. Json, Leetcode input data.
+
+#### Binary Tree Serialization
+Design an algorithm and write code to serialize and deserialize a binary tree. Writing the tree to a file is called ‘serialization’ and reading back from the file to reconstruct the exact same binary tree is ‘deserialization’.
+**Example**
+An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following structure:
+```
+  3
+ / \
+9  20
+  /  \
+ 15   7
+```
 
 ### Subsets(DFS)
 
