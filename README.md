@@ -269,6 +269,19 @@ If class has 2 int and 1 double, then it's will be = 8 + 8 string.
 #### Hash Function Collision
 * 1. Open Hash Table: If collision existed, then create and save a LinkedList.拉链法类似于上厕所的时候, 看上了一个坑, 就等它, 就在后面排着如果要查找的时候, 就从排着的地方for一遍, 看有没有
 * 2. Close Hash Table: 
+If colllision existed, then take a position, it kinda like when you go to bathroom, you need to find an available shithole,someone is in that position, you need to find next available position. If someone wants to take my position, then I have to someone else position.
+
+But be careful about close hash, if a key is deleted, it will be labeled as **Available** not ***empty***.
+e.g. you add 7, 3, 12 to a Hash Function, and % 5, assume the first part will act like follwing graph.
+![SummaryDocs/uf-1.png](SummaryDocs/hash2.png)
+其中7加到index为2的，3加到index为3的，到12的时候，算出来的index是2，但是2已经被占了，所以向后挪一个，去看看3，结果3也被占了，所以12就被塞到了index为4的地方
+
+当删除3的时候，不能直接把index为3的位置直接标空位，而应该标available，这样查询12的时候，会去2找，没有去看3，发现available，知道之前被占过，然后接着向后找
+
+#### Rehashing
+The size of the hash table is not determinate at the very beginning. If the total size of keys is too large(e.g. size >= capacity/10 **10%**), we should double the size of the hash table and rehash keys.
+
+
 
 ### Concurrency And Threads
 
