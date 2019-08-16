@@ -207,6 +207,14 @@ ProtoBuf(by Google)
 Spark (RDD key value pairs)
 Kafka Json format
 ```
+#### Examples of Serialization
+* we have an int array, full of integers, we can simply serialize to "[1,2,3]"
+* For a Linked List, we serialize to "1-<2->3"
+* HashMap, we can serialize to "{\"key\":\"value\"}"
+
+**The factors while we design an algorithm of serialization**
+* 1.Compression rate. Regards the newtworking transfer cost and storage cost, of course we want to less, Thrift,ProtoBuf are Designed to for faster networking transfering data and saving storage.
+* 2. Readability. For developer, after serialization we can easily understand what the raw data looks like. e.g. Json, Leetcode input data.
 
 ### Subsets(DFS)
 
