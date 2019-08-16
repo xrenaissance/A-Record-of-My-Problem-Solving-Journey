@@ -182,6 +182,16 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 * Generation Rule: how do you want to generate from one state to next state. e.g. avoid redundant visite, upper and lower boundary
 * Expantion Rule: From which direction you will generate next state.
 
+#### Binary Tree Serialization
+*What is Serialization*
+```
+The process of transfering structured data in the memory to a String
+```
+Serialize: Object to String
+```
+Deserialize: String to Object
+```
+
 
 ### Subsets(DFS)
 
