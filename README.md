@@ -231,7 +231,16 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 * Queue: BFS -> O(1) offer, poll, peek
 * Stack: DFS -> O(1) offerLast, pollLast, peekLast
 
-  
+#### Hash
+Time Complexity:
+   * Add O(keySize)
+   * Search(Contains) O(keySize)
+   * Remove O(keySize)
+If size of key is 4 bytes, then Time complexity of add,search, and remove is O(4) -> O(1)
+#### HashTable vs HashMap vs HashSet
+   * HashSet only has key no value, it's not ordered, all of keys are unique. -> normally for remove duplicated data
+   * HashTabe is thread safe, multiple threads can call one HashTable
+   * HashMap doesn't support thread safe,it will mess up if multiple threads call one HashMap. PS: Because lock and unlock is very slow, so HashTable is slower.
 
 ### Concurrency And Threads
 
