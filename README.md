@@ -225,6 +225,12 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 
 * Implement algorithms via one/more data structure
 
+#### Common data structures
+* Linear data structure, normally implemented by array, e.g. Queue(LinkedList, ArrayDeque),Stack(Deque),Hash
+* Tree data structure, normally reference, e.g binary tree(left, right), graph(nodes, List<Node>), Neary-Tree(node,List<Node>)
+* Queue: BFS -> O(1) offer, poll, peek
+* Stack: DFS -> O(1) offerLast, pollLast, peekLast
+
   
 
 ### Concurrency And Threads
