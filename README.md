@@ -187,11 +187,26 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 ```
 The process of transfering structured data in the memory to a String
 ```
+```
 Serialize: Object to String
+```
 ```
 Deserialize: String to Object
 ```
+When do we need to serialize data?
+```
+1. 将内存中的数据持久化存储时内存中重要的数据不能只是呆在内存里,
+这样断电就没有了,所需需要用一种方式写入硬盘,在需要的时候,
+能否再从硬盘中读出来在内存中重新创建
 
+2. 网络传输时机器与机器之间交换数据的时候,不可能互相去读对方的内存。
+只能讲数据变成字符流数据(字符串)后常用的一些序列化手段:XMLJson是个hash map，
+key是 string， value是list/int或另一个hash map
+Thrift (by Facebook)
+ProtoBuf(by Google)
+Spark (RDD key value pairs)
+Kafka Json format
+```
 
 ### Subsets(DFS)
 
