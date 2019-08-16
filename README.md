@@ -176,6 +176,12 @@ Leetcode 1135 Connecting Cities With Minimum Cost
 
 
 ### Breadth First Search(BFS)
+#### **Applications**: Binary Tree BFS, Graph BFS, Topological Sort, Grid(Board) BFS
+#### Over 99% of BFS kinda questions can be solved via BFS template.
+#### General Steps to solve BFS questions:
+      * Generation Rule: how do you want to generate from one state to next state. e.g. avoid redundant visite, upper and lower boundary
+      * Expantion Rule: From which direction you will generate next state.
+
 
 ### Subsets(DFS)
 
