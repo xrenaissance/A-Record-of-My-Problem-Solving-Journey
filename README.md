@@ -280,7 +280,37 @@ e.g. you add 7, 3, 12 to a Hash Function, and % 5, assume the first part will ac
 
 #### Rehashing
 The size of the hash table is not determinate at the very beginning. If the total size of keys is too large(e.g. size >= capacity/10 **10%**), we should double the size of the hash table and rehash keys.
-
+```java
+   public class Solution {
+      /**
+       * @param HashTable: A list of the first node of linked list
+       * @param return: A list of the first node of linked list which hava twice size
+       */
+       public ListNode[] rehashing(ListNode[] hashTable) {
+         if (hashTable.length <= 0) {
+            return hashTable;
+         }
+         int newCapacity = 2 * hashTable.length;
+         ListNode[] newTable = new ListNode[newCpacity];
+         for (int i = 0; i < hashTable.length; i++) {
+            while(hashTable[i] != null) {
+               int newIndex = (hashTable[i].val % newCapacity + newCapacity) % newCapacity;
+               if (newTable[newIndex] == null) {
+                  newTable[newIndex] = new ListNode(hashTable[i].val);
+               } else {
+                  ListNode dummy = newTable[newIndex];
+                  while (dummy.next != null) {
+                     dummy = dummy.next;
+                  }
+                  dummy.next = new ListNode(hashTable[i].val);
+               }
+               hashTable[i] = hashTable[i].next;
+            }
+         }
+         return newTable;
+       }
+   }
+```
 
 
 ### Concurrency And Threads
