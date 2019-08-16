@@ -245,10 +245,8 @@ If size of key is 4 bytes, then Time complexity of add,search, and remove is O(4
 #### Hash Function/Hash Code
 Target: For any key, it'll transfer to an integer that is in 0 ~ capacity - 1
 Understanding: HashMap can be regarded as a huge array, hash function is to find the index, and save the (k,v) to the array.
+<<<<<<< HEAD
 ![SummaryDocs/uf-1.png](SummaryDocs/hash1.jpg)
-
-#### **Hash Algorithm**
-MD5 SHA-1 SHA2 is to complicated, except that,
 * 1. char -> 255 Integer
 * 2. Simplely get modulus, e.g. key % 31 to transfer 31进制, 31为经验值
    ** mutiply the 经验值 and then get modulus, just for checking corner case
