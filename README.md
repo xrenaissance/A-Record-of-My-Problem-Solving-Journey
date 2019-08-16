@@ -266,7 +266,9 @@ e.g. int is 4 bytes, which is 4 chars
 double is 8 bytes, which is 8 chars
 If class has 2 int and 1 double, then it's will be = 8 + 8 string.
 
-
+#### Hash Function Collision
+* 1. Open Hash Table: If collision existed, then create and save a LinkedList.拉链法类似于上厕所的时候, 看上了一个坑, 就等它, 就在后面排着如果要查找的时候, 就从排着的地方for一遍, 看有没有
+* 2. Close Hash Table: 
 
 ### Concurrency And Threads
 
