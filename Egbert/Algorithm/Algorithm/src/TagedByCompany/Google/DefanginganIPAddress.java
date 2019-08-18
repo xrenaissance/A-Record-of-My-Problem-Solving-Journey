@@ -1,4 +1,4 @@
-package GoogleTaged;
+package TagedByCompany.Google;
 
 /**
  * @leetcode https://leetcode.com/problems/defanging-an-ip-address/

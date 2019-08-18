@@ -1,4 +1,4 @@
-package GoogleTaged;
+package TagedByCompany.Google;
 
 public class TreeNode {
     int val;
