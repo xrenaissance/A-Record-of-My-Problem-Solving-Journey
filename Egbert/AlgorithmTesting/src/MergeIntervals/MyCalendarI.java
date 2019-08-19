@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * @leetcode https://leetcode.com/problems/my-calendar-i/
- * @Time nlogn
+ * @Time logn
  * @Space n
  */
 public class MyCalendarI {
