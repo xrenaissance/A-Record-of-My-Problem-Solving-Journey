@@ -39,22 +39,23 @@ Keywords
 **态度：作为一个聪明且靠谱的工程师，和同事商量好一个feature的input, output API和一些可能的模棱两可的use case**
 
 ### 二、从Input的角度思考
-* 1. 常见的input数据类型
-** Number/String
-** 数字的可能形态（417. 有效数字）
-** string是否可以假设完全满足题意下的格式（1380. Log Sorting，887. 三元式解析器）
-** String转number，注意前导0 （570. 寻找丢失的数 II）
-** Linked List：单？双？环？
-** Array
- 形态：升序，降序，反转（怎么个转法）
- 值：重复？特殊值（空串）
-** Tree
- 树的类型，类型的定义（e.g. BST是否存在相等节点）
- 节点定义（e.g. 有没有parent指针）
- 搜索节点：给的是节点还是节点值？节点是否一定存在？
- hashTable/Set
- Key value都是什么
-
+```
+ 1. 常见的input数据类型
+     1. Number/String
+        数字的可能形态（417. 有效数字）
+        string是否可以假设完全满足题意下的格式（1380. Log Sorting，887. 三元式解析器）
+        String转number，注意前导0 （570. 寻找丢失的数 II）
+     2. Linked List：单？双？环？
+     3. Array
+        形态：升序，降序，反转（怎么个转法）
+        值：重复？特殊值（空串）
+     4. Tree
+        树的类型，类型的定义（e.g. BST是否存在相等节点）
+        节点定义（e.g. 有没有parent指针）
+        搜索节点：给的是节点还是节点值？节点是否一定存在？
+     5. hashTable/Set
+        Key value都是什么
+```
 
 * 2. 空值
 ```
