@@ -56,7 +56,6 @@ Keywords
      5. hashTable/Set
         Key value都是什么
 ```
-
 * 2. 空值
 ```
 空字符串，空数组，空链表或树
@@ -64,7 +63,9 @@ Keywords
 ```
 
 * 3. 其他需要确定的edge case
+```
 796. 开锁
+```
 
 ### 三、从Output的角度思考
 ```
