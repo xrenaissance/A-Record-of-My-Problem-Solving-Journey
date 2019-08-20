@@ -27,6 +27,66 @@ Patterns for Coding Questions
 ###### [My Daily Coding Records](https://docs.google.com/spreadsheets/d/13oGqFxjJ6pWtuuxWlrWnczDdw-d1yoPx1T9U3GFxDCM/edit#gid=0)
 
 ## Getting Started
+### 一、总决
+```
+核心原则：见葵花宝典
+方向：算法题中的ambiguity出自三方面
+Input 
+Output 
+Keywords
+```
+
+**态度：作为一个聪明且靠谱的工程师，和同事商量好一个feature的input, output API和一些可能的模棱两可的use case**
+
+### 二、从Input的角度思考
+* 1. 常见的input数据类型
+```
+Number/String
+数字的可能形态（417. 有效数字）
+string是否可以假设完全满足题意下的格式（1380. Log Sorting，887. 三元式解析器）
+String转number，注意前导0 （570. 寻找丢失的数 II）
+Linked List：单？双？环？
+Array
+ 形态：升序，降序，反转（怎么个转法）
+值：重复？特殊值（空串）
+Tree
+树的类型，类型的定义（e.g. BST是否存在相等节点）
+节点定义（e.g. 有没有parent指针）
+搜索节点：给的是节点还是节点值？节点是否一定存在？
+hashTable/Set
+Key value都是什么
+```
+
+* 2. 空值
+```
+空字符串，空数组，空链表或树
+注意包含的更深一层的空值（e.g. 数组中的空字符串 - 例题 775. 回文对）
+```
+
+* 3. 其他需要确定的edge case
+796. 开锁
+
+### 三、从Output的角度思考
+```
+商量好具体返回什么
+返回值还是返回index？返回数还是string
+返回Array：需要排序吗？升序可以吗？
+返回TreeNode还是节点值？
+Input为空或者其他edge case时，返回什么？
+找不到/无解返回什么？
+```
+
+### 四、从keywords的角度思考
+
+* 1. 操作
+合并区间：边界开闭？
+reverse：具体怎么讲？
+* 2. 条件判定
+什么叫相同？指针？值？还是什么？
+什么叫唯一？在什么里面唯一？（158. 变位词） 
+* 3. 概念
+存在不同定义的概念（e.g. BST是否存在相等节点）
+题目情景下的特有概念，用复述和举例进行明确
 
 ### Union Find
 
