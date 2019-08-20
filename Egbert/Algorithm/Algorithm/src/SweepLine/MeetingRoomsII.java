@@ -8,6 +8,9 @@ import java.util.List;
  * @leetcode https://leetcode.com/problems/meeting-rooms-ii/
  * @Time NlogN
  * @Space N + N for sorting
+ *
+ * @keyPoint exactly same as number of airplanes, get the maximum
+ * start points at a certain time intervals
  */
 public class MeetingRoomsII {
     public int minMeetingRooms(int[][] intervals) {
