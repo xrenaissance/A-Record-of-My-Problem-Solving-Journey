@@ -40,7 +40,7 @@ Keywords
 
 ### 二、从Input的角度思考
 * 1. 常见的input数据类型
-```
+
 * Number/String
 * 数字的可能形态（417. 有效数字）
 * string是否可以假设完全满足题意下的格式（1380. Log Sorting，887. 三元式解析器）
@@ -55,7 +55,7 @@ Keywords
 ** 搜索节点：给的是节点还是节点值？节点是否一定存在？
 ** hashTable/Set
 ** Key value都是什么
-```
+
 
 * 2. 空值
 ```
