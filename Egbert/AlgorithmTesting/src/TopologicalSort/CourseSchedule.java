@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * @leetcode https://leetcode.com/problems/course-schedule/
- * @Time V + E E = number of courses, E = num of edges
+ * @Time V + E E = number of courses, E = total number of prerequisites
  * @Space V + E
  */
 public class CourseSchedule {
@@ -45,6 +45,7 @@ public class CourseSchedule {
                 }
             }
         }
+        // if ordering totals doest have all of courses
         if (total != numCourses) {
             return false;
         }
