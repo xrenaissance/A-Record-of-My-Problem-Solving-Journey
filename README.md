@@ -239,7 +239,8 @@ Leetcode 547 Friend Circles
 
 Leetcode 1135 Connecting Cities With Minimum Cost 
 ```
-
+* * *
+- - -
 ### Breadth First Search(BFS)
 #### **Applications**: Binary Tree BFS, Graph BFS, Topological Sort, Grid(Board) BFS
 #### Over 99% of BFS kinda questions can be solved via BFS template.
@@ -292,47 +293,111 @@ An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following stru
   /  \
  15   7
 ```
-
+* * *
+- - -
 ### Subsets(DFS)
 
+* * *
+- - -
 ### Sliding Window
 
+
+* * *
+- - -
 ### Merge Intervals
 
+
+* * *
+- - -
 ### Sweep Line
 
+
+* * *
+- - -
 ### Top K Elements
 
+
+* * *
+- - -
 ### K-Way Merge
 
+
+* * *
+- - -
 ### Two Pointers
 
+
+* * *
+- - -
 ### Slow and Faster Pointer
 
+
+* * *
+- - -
 ### LinkedList
 
+
+* * *
+- - -
 ### Trees
 
+
+* * *
+- - -
 ### Cyclic Sort
 
+
+* * *
+- - -
 ### Binary Search
 
+
+* * *
+- - -
 ### Merge Intervals
 
+
+* * *
+- - -
 ### Dynamic Programming(DP)
 
+
+* * *
+- - -
 ### Tries
 
-### Topological Sort
 
+* * *
+- - -
+### Topological Sort
+#### Definition and Applications
+```
+Topological Sort is used to find a linear ordering of elements that have dependencies on each other. 
+For example, if event ‘B’ is dependent on event ‘A’, ‘A’ comes before ‘B’ in topological ordering.
+
+This pattern defines an easy way to understand the technique for performing topological 
+sorting of a set of elements and then solves a few problems using it.
+```
+#### Let's see how this pattern works
+
+* * *
+- - -
 ### Two Heaps
 
+
+* * *
+- - -
 ### Math
 
+
+* * *
+- - -
 ### Bit Operations
 
-### Data Structure Design And Implementation(Tries,HashMap,HashSet,ArrayToTree,Iterator)
 
+* * *
+- - -
+### Data Structure Design And Implementation(Tries,HashMap,HashSet,ArrayToTree,Iterator)
 #### 1. Two types of Questions about data structure
 #### 2. HashTable: a. Theory b. Applications
 #### 3. Heap: a. Theory b. Applications - PriorityQueue c. Alternatives - TreeMap
@@ -445,11 +510,21 @@ size是实际被占的，如果实际被占的空间超过十分之一，冲突�
 因为哈希表只膨胀， 不收缩， 所以对于是不是加一个又删一个的操作， 
 就要偶尔destroy了再重建一个
 ```
-
+* * *
+- - -
 ### Concurrency And Threads
 
+
+* * *
+- - -
 ### OOD
 
+
+* * *
+- - -
 ### System Design
 
+
+* * *
+- - -
 ### Behavior Questions' Answer Template
