@@ -390,7 +390,60 @@ set of elements and then solves a few problems using it.
  - 1.Start with all the sources and save all sources to sorted list.
  - 2.Remove all sources and their edges from graph
  - 3.After the removal of the edges, we have the new edges, then repeate 1 and 2 until all vertices are visited
- 
+
+#### Exactly implementation, basically all of topological kinda qs can be soleved by this pattern
+
+**Graph Initialization**
+```java
+// Graph initialization
+Map<Integer, Integer> inDegrees = new HashMap<>(); 
+Map<Integer, List<Integer>> graph = new HashMap<>();
+for (int i = 0; i < V++) {
+  inDegrees.put(i, 0);
+  graph.put(i, new ArrayList<>());
+}
+```
+
+**Building Graph**
+```java
+for (int[] pre : prerequisites) {
+  int parent = pre[1];
+  int child = pre[0]; 
+  inDegrees.put(child, inDegrees.get(child) + 1); 
+  graph.get(parent).add(child);
+}
+```
+
+**Get All Source Point**
+```java
+Queue<Integer> pres = new LinkedList<>();
+for (Map.Entry<Integer, Integer> entry : inDegrees.entrySet()) {
+  if (entry.getValue() == 0) {
+     pres.offer(entry.getKey());
+  }
+}
+```
+
+**BFS Traverse each source vertexs, then degree - 1, if = 0, then new source vertex is formed
+```java
+ while (!sources.isEmpty()) {
+    int pre = pres.poll();
+    result[index++] = pre;         
+    for (int child : graph.get(pre)) {
+       inDegrees.put(child, inDegrees.get(child) - 1);
+       if (inDegrees.get(child) == 0) {
+          pres.offer(child);            
+       } 
+    }
+}
+```
+**Check if all vertexs are visited, if not it means it's a cyclic graph,not DAG**
+```java
+if (total != numOfVertex) {
+  return false or whatever the question requires.
+}
+```
+
 #### Visual graph
 ![SummaryDocs/uf-1.png](SummaryDocs/tp4.png)
 
