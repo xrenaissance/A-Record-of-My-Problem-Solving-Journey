@@ -380,7 +380,20 @@ For example, if event ‘B’ is dependent on event ‘A’,
 This pattern defines an easy way to understand the 
 technique for performing topological sorting of a 
 set of elements and then solves a few problems using it.
-```
+``` 
+#### Let's see how this pattern works
+* Source: Any node that has no incoming edges and has only outgoing edges
+* Sink: Any node that has only incoming edges and no outgoing  edges
+**So a topological ordering starts wiht one of sources and ends ant one of sinks.**
+
+- How to implement(**BFS**)
+ - 1.Start with all the sources and save all sources to sorted list.
+ - 2.Remove all sources and their edges from graph
+ - 3.After the removal of the edges, we have the new edges, then repeate 1 and 2 until all vertices are visited
+ 
+#### Visual graph
+![SummaryDocs/uf-1.png](SummaryDocs/tp4.png)
+
 #### Example1. Topological Sort of a directed graph(A graph with undirectional edges)
 ```
 Topological sort of a directed graph is a linear ordering of 
@@ -425,7 +438,10 @@ Output: Following are all valid topological sorts for the given graph:
 There are other valid topological ordering of the graph too.
 ```
 ![SummaryDocs/uf-1.png](SummaryDocs/tp3.png)
-#### Let's see how this pattern works
+
+
+
+
 
 * * *
 - - -
