@@ -439,8 +439,62 @@ There are other valid topological ordering of the graph too.
 ```
 ![SummaryDocs/uf-1.png](SummaryDocs/tp3.png)
 
+```java
+/**
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6010387461832704
+ * @Time V + E
+ * @Space V + E for graph space
+ */
+class TopologicalSort {
+    public static List<Integer> sort(int vertices, int[][] edges) {
+        List<Integer> sortedOrder = new ArrayList<>();
+        if (vertices <= 0) {
+            return sortedOrder;
+        }
+        // a. Initialization
+        Map<Integer, Integer> inDegree = new HashMap<>();
+        Map<Integer, List<Integer>> graph = new HashMap<> ();
+        for (int i = 0; i < vertices; i++) {
+            inDegree.put(i, 0);
+            graph.put(i, new ArrayList<Integer>());
+        }
+        // b. Building graph
+        for (int[] edge : edges) {
+            int parent = edge[0];
+            int child = edge[1];
+            inDegree.put(child, inDegree.get(child) + 1);
+            graph.get(parent).add(child);
+        }
 
+        // c. Find all sources i.e. all vertices with 0 in-degree
+        Queue<Integer> sources = new LinkedList<>();
+        for (Map.Entry<Integer, Integer> entry : inDegree.entrySet()) {
+            if (entry.getValue() == 0) {
+                sources.offer(entry.getKey());
+            }
+        }
 
+        // d. For each source, add it to the sortedOrder
+        // if a child's in-degree becomes 0, add it to the sources queue
+        while (!sources.isEmpty()) {
+            int vertex = sources.poll();
+            sortedOrder.add(vertex);
+            List<Integer> children = graph.get(vertex);
+            for (int child : children) {
+                inDegree.put(child, inDegree.get(child) - 1);
+                if (inDegree.get(child) == 0) {
+                    sources.offer(child);
+                }
+            }
+        }
+        // topological sort is not possible as the graph has cycle
+        if (sortedOrder.size() != vertices) {
+            return new ArrayList<>();
+        }
+        return sortedOrder;
+    }
+}
+```
 
 
 * * *
