@@ -441,7 +441,6 @@ There are other valid topological ordering of the graph too.
 
 ```java
 /**
- * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6010387461832704
  * @Time V + E
  * @Space V + E for graph space
  */
