@@ -548,6 +548,121 @@ class TopologicalSort {
 }
 ```
 
+#### Example 2. Alien Dictionary
+**Problem Statement**
+There is a dictionary containing words from an alien language for
+which we don’t know the ordering of the characters. Write a method to
+find the correct order of characters in the alien language.
+**Example 1:**
+```
+Input: Words: ["ba", "bc", "ac", "cab"]
+Output: bac
+Explanation: Given that the words are sorted lexicographically by the rules of the alien language, so
+from the given words we can conclude the following ordering among its characters:
+
+1. From "ba" and "bc", we can conclude that 'a' comes before 'c'.
+2. From "bc" and "ac", we can conclude that 'b' comes before 'a'
+
+From the above two points we can conclude that the correct character order is: "bac"
+```
+
+**Example 2:**
+```
+Input: Words: ["cab", "aaa", "aab"]
+Output: cab
+Explanation: From the given words we can conclude the following ordering among its characters:
+
+1. From "cab" and "aaa", we can conclude that 'c' comes before 'a'.
+2. From "aaa" and "aab", we can conclude that 'a' comes before 'b'
+
+From the above two points, we can conclude that the correct character order is: "cab"
+```
+
+**Example 3:**
+```
+Input: Words: ["ywx", "xww", "xz", "zyy", "zwz"]
+Output: yxwz
+Explanation: From the given words we can conclude the following ordering among its characters:
+
+1. From "ywx" and "xww", we can conclude that 'y' comes before 'x'.
+2. From "xww" and "xz", we can conclude that 'w' comes before 'z'
+3. From "xz" and "zyy", we can conclude that 'x' comes before 'z'
+2. From "zyy" and "zwz", we can conclude that 'y' comes before 'w'
+
+From the above two points we can conclude that the correct character order is: "yxwz"
+```
+
+Solution: 基本上就是和前面的题目的马甲，只不过现在变成了对单词的字母进行排序,要小心的就是两两之间
+只需看第一次不同的字母，因为只有第一次不同的时候才能知道先后顺序.
+```java
+/**
+ * @leetcode https://leetcode.com/problems/alien-dictionary/
+ * @param V total number of different characters
+ * @param E total number of rules, since each pair can give us one rule
+ * so E is the length of alien dictionary
+ * @Time V + E
+ * @Space V + E
+ */
+public class AlienDictionary {
+    public static String findOrder(String[] words) {
+        if (words == null || words.length == 0) {
+            return "";
+        }
+        // Graph initialization
+        Map<Character, Integer> inDegree = new HashMap<>();
+        Map<Character, List<Character>> graph = new HashMap<>();
+        for ( String word : words) {
+            for (int i = 0; i < word.length(); i++) {
+                inDegree.put(word.charAt(i), 0);
+                graph.putIfAbsent(word.charAt(i), new ArrayList<>());
+            }
+        }
+        // Build Graph
+        for (int i = 0; i < words.length - 1; i++) {
+            String w1 = words[i];
+            String w2 = words[i + 1];
+            int minLength = Math.min(w1.length(), w2.length());
+            for (int j = 0; j < minLength; j++) {
+                char parent = w1.charAt(j);
+                char child = w2.charAt(j);
+                if (parent != child) {
+                    graph.get(parent).add(child);
+                    inDegree.put(child, inDegree.get(child) + 1);
+                    // only the first different char between two words can find order
+                    break;
+                }
+            }
+        }
+        // Find All source point
+        Queue<Character> source = new ArrayDeque<>();
+        for (Map.Entry<Character, Integer> entry : inDegree.entrySet()) {
+            if (entry.getValue() == 0) {
+                source.offer(entry.getKey());
+            }
+        }
+        // Traverse source points, remove, its child's degree - 1, if = 0, then
+        // new source point is formed
+        StringBuilder sortOrder = new StringBuilder();
+        while (!source.isEmpty()) {
+            char vertex = source.poll();
+            sortOrder.append(vertex);
+            for (Character child : graph.get(vertex)) {
+                inDegree.put(child, inDegree.get(child) - 1);
+                if (inDegree.get(child) == 0) {
+                    source.offer(child);
+                }
+            }
+        }
+        // check if possible
+        if (sortOrder.length() != inDegree.size()) {
+            return "";
+        }
+        return sortOrder.toString();
+    }
+}
+```
+
+
 
 * * *
 - - -
