@@ -21,6 +21,26 @@
 20. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
 
 #### 2 - Basic Algorithm && data structure high frequency problems I
+21. [Leetcode 65 valid-number](https://leetcode.com/problems/valid-number)
+22. [Leetcode 311 sparse-matrix-multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)
+23. [Leetcode 277 find-the-celebrity](https://leetcode.com/problems/find-the-celebrity)
+
+24. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+25. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+26. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+27. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+28. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+29. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+30. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+31. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+32. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+33. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+34. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+35. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+36. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+37. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+38. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
+39. [Leetcode 44 wildcard-matching](https://leetcode.com/problems/wildcard-matching)
 
 #### 3 - Basic Algorithm && data structure high frequency problems II
 
