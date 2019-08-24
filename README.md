@@ -9,6 +9,7 @@ Patterns for Coding Questions
 ##### [Sliding Window](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sliding-window-1)
 ##### [Top K Elements](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#top-k-elements-1)
 ##### [Merge Intervals](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#merge-intervals-1)
+##### [Cyclic Sort](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#merge-intervals-1)
 ##### [Sweep Line](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sweep-line-1)
 ##### [K-Way Merge](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#k-way-merge-1)
 ##### [Two Pointers](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-pointers-1)
@@ -345,6 +346,62 @@ An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following stru
 * * *
 - - -
 ### Cyclic Sort
+This pattern describes an interesting approach to deal with problems involving containing numbers
+in a given range. For example, take the following probem:
+```
+You are given an unsorted array containing numbers taken from the 
+range 1 to ‘n’. The array can have duplicates, which means that some 
+numbers will be missing. Find all the missing numbers.
+```
+To efficiently solve this problem, we can use fact that the input array
+contains number in the range of **[1, n]**. For example, to efficiently sort
+the array, we can try placing each number in its correct place. i.e., place 1 at
+index 0, placing 2 at index 1, and so on. Once we are done with the sorting, we 
+can iterate the array to find all indices that are missing the correct numbers.
+These will be our required numbers.
+
+#### Example 1 - Cyclic Sort
+We are given an array containing ‘n’ objects. Each object, when created, was assigned a unique number from 1 to ‘n’ based on their creation sequence. This means that the object with sequence number ‘3’ was created just before the object with sequence number ‘4’.
+
+Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without any extra space. For simplicity, let’s assume we are passed an integer array containing only the sequence numbers, though each number is actually an object.
+
+**Example 1**
+```
+Input: [3, 1, 5, 4, 2]
+Output: [1, 2, 3, 4, 5]
+```
+
+**Example 2**
+```
+Input: [2, 6, 4, 3, 1, 5]
+Output: [1, 2, 3, 4, 5, 6]
+```
+**Solution**
+```java
+/**
+ * @Time N
+ * @Space 1
+ */
+public class CyclicSort {
+    public static void sort(int[] nums) {
+        if ( nums == null || nums.length == 0) {
+            return;
+        }
+        int index = 0;
+        while (index < nums.length) {
+            while (nums [index] != index + 1) {
+                swap(nums, index, nums[index] - 1);
+            }
+            index++;
+        }
+    }
+    private static void swap(int[] nums, int left, int right) {
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
+    }
+}
+```
 
 
 * * *
