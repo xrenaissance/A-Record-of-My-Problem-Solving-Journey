@@ -9,7 +9,7 @@ Patterns for Coding Questions
 ##### [Sliding Window](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sliding-window-1)
 ##### [Top K Elements](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#top-k-elements-1)
 ##### [Merge Intervals](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#merge-intervals-1)
-##### [Cyclic Sort](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#merge-intervals-1)
+##### [Cyclic Sort](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#cyclic-sort-1)
 ##### [Sweep Line](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#sweep-line-1)
 ##### [K-Way Merge](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#k-way-merge-1)
 ##### [Two Pointers](https://github.com/xrenaissance/A-Record-of-My-Problem-Solving-Journey#two-pointers-1)
