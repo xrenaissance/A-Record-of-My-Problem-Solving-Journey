@@ -403,6 +403,28 @@ public class CyclicSort {
 }
 ```
 
+#### Example 2 - Find Missing Number
+Algorithm: every time we can put a number into correct position, then check which one is not correct
+```java
+    public static int findMissingNumber(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int index = 0;
+        while (index < nums.length) {
+            while (nums[index] < nums.length && nums[index] != nums[nums[index]]) {
+                swap(nums, index, nums [index]);
+            }
+            index++;
+        }
+        for ( int i = 0; i < nums.length; i++) {
+            if ( nums [i] != i) {
+                return i;
+            }
+        }
+        return nums.length;
+    }
+```
 
 * * *
 - - -
