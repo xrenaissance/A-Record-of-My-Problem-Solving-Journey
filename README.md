@@ -425,7 +425,28 @@ Algorithm: every time we can put a number into correct position, then check whic
         return nums.length;
     }
 ```
-
+马甲题目，找出所有的missing numbers
+```java
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> missing = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return missing;
+        }    
+        int index = 0;
+        while (index < nums.length) {
+            while (nums[index] != nums[nums[index] - 1]) {
+                swap(nums, index, nums[index] - 1);
+            }
+            index++;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                missing.add(i + 1);
+            }
+        }
+        return missing;
+    }
+```
 * * *
 - - -
 ### Binary Search
