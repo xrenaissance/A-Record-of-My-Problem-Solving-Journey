@@ -12,10 +12,12 @@ public class CyclicSort {
         }
         int index = 0;
         while (index < nums.length) {
-            while (nums [index] != index + 1) {
-                swap(nums, index, nums[index] - 1);
+            int j = nums[index] - 1;
+            if (nums[index] != nums[j]) {
+                swap(nums, index, j);
+            } else {
+                index++;
             }
-            index++;
         }
     }
     private static void swap(int[] nums, int left, int right) {
