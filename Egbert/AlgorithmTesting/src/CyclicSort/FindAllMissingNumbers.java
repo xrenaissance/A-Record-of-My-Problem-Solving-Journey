@@ -14,10 +14,12 @@ public class FindAllMissingNumbers {
         }
         int index = 0;
         while (index < nums.length) {
-            while (nums[index] != nums[nums[index] - 1]) {
-                swap(nums, index, nums[index] - 1);
+            int j = nums[index] - 1;
+            if (nums[index] != nums[j]) {
+                swap(nums, index, j);
+            } else {
+                index++;
             }
-            index++;
         }
         for ( int i = 0; i < nums.length; i++) {
             if ( nums [i] != i + 1) {
