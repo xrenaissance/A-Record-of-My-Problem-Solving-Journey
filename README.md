@@ -316,6 +316,24 @@ Sweep Line类型的题目的特征:
 - 区间的两端代表事件的开始和结束
 - 需要排序
 
+一般解决问题的思路:
+创建一个class point, 这个point主要用来记录每个time interval,起始点的状态，然后我们只需要按照时间点排序，然后解决问题就好
+其中这个flag可以很灵活，根据具体的问题来定义.
+```
+key points就是你只需要看在一个certain time interval, the maximum number of "start points"
+```
+
+```java
+    public static class Point {
+        int time;
+        int flag;
+        public Point(int time, int flag) {
+            this.time = time;
+            this.flag = flag;
+        }
+    }
+```
+
 #### Number of Airplanes in the Sky
 Given an interval list which are flying and landing time of the flight. How many airplanes are on the sky at most?
 ```python
@@ -326,7 +344,58 @@ Given an interval list which are flying and landing time of the flight. How many
 [4,7]
 ]
 ```
-
+代码实现
+```java
+/**
+ * @leetcode https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/description
+ * @Time 2N + NlogN
+ * @Space N
+ * key point get maximum number of start points, start +, end -
+ */
+public class NumberofAirplanesintheSky {
+    /**
+     * @param airplanes: An interval array
+     * @return: Count of airplanes are in the sky.
+     */
+    public int countOfAirplanes(List<Interval> airplanes) {
+        if (airplanes == null || airplanes.size() == 0) {
+            return 0;
+        }
+        List<Point> points = new ArrayList<>();
+        for (Interval i : airplanes) {
+            points.add(new Point(i.start, 1));
+            points.add(new Point(i.end, 0));
+        }
+        Collections.sort(points, (p1, p2) -> {
+            int diff = p1.time - p2.time;
+            if (diff == 0) {
+                diff = p1.flag - p2.flag;
+            }
+            return diff;
+        });
+        int count = 0;
+        int max = 0;
+        for (Point p : points) {
+            if (p.flag == 1) {
+                count++;
+            } else {
+                count--;
+            }
+            max = Math.max(max, count);
+        }
+        return max;
+    }
+    public static class Point {
+        int time;
+        int flag;
+        public Point(int time, int flag) {
+            this.time = time;
+            this.flag = flag;
+        }
+    }
+}
+```
+马甲题，max cpu, file load等等的都是一个题目
 
 * * *
 - - -
