@@ -344,6 +344,12 @@ Given an interval list which are flying and landing time of the flight. How many
 [4,7]
 ]
 ```
+
+![SummaryDocs/uf-1.png](SummaryDocs/sl1.png)
+从图我们看出核心就是看有多少个 "start"同时在天上，也就是最多的交叉
+我们有个时间轴，每个时间我们画一条铅笔的总线，看各个时间的这条总线和横线的区间交点最多几个,也就是我之前提到有多少个 "start"同时在线.
+我们接下来只需要把start, end分拆，排序就好了.
+
 代码实现
 ```java
 /**
