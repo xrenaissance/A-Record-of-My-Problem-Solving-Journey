@@ -390,10 +390,12 @@ public class CyclicSort {
         }
         int index = 0;
         while (index < nums.length) {
-            while (nums [index] != index + 1) {
-                swap(nums, index, nums[index] - 1);
+            int j = nums[index] - 1;
+            if (nums[index] != nums[j]) {
+                swap(nums, index, j);
+            } else {
+                index++;
             }
-            index++;
         }
     }
     private static void swap(int[] nums, int left, int right) {
@@ -404,50 +406,164 @@ public class CyclicSort {
 }
 ```
 
-#### Example 2 - Find Missing Number
+#### Example 2 - Find All Missing Number
 Algorithm: every time we can put a number into correct position, then check which one is not correct
 ```java
-    public static int findMissingNumber(int[] nums) {
+    public static List<Integer> findNumbers(int[] nums) {
+        List<Integer> missingNumbers = new ArrayList<>();
         if (nums == null || nums.length == 0) {
-            return 0;
+            return missingNumbers;
         }
         int index = 0;
         while (index < nums.length) {
-            while (nums[index] < nums.length && nums[index] != nums[nums[index]]) {
-                swap(nums, index, nums [index]);
+            int j = nums[index] - 1;
+            if (nums[index] != nums[j]) {
+                swap(nums, index, j);
+            } else {
+                index++;
             }
-            index++;
         }
         for ( int i = 0; i < nums.length; i++) {
-            if ( nums [i] != i) {
-                return i;
+            if ( nums [i] != i + 1) {
+                missingNumbers.add(i + 1);
             }
         }
-        return nums.length;
+        return missingNumbers;
     }
 ```
-马甲题目，找出所有的missing numbers
+马甲题目，找出Duplicated numbers, **交换的时候相等就是重复的number**
 ```java
-    public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> missing = new ArrayList<>();
+    public int findDuplicateCS(int[] nums) {
         if (nums == null || nums.length == 0) {
-            return missing;
-        }    
+            return -1;
+        }
         int index = 0;
         while (index < nums.length) {
-            while (nums[index] != nums[nums[index] - 1]) {
-                swap(nums, index, nums[index] - 1);
+            if (nums[index] != index + 1) {
+                if (nums[index] != nums[nums[index] - 1]) {
+                    swap(nums, index, nums[index] - 1);
+                } else {
+                    return nums[index];
+                }
+            } else {
+                index++;
             }
-            index++;
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != i + 1) {
-                missing.add(i + 1);
-            }
-        }
-        return missing;
+        return -1;
     }
 ```
+
+算是个变种马甲吧，思路其实依然和missing number一样, **位置不对的就是重复的number，index就是丢失的**
+Find the Corrupt Pair
+We are given an unsorted array containing ‘n’ numbers taken from the range 1 to ‘n’. The array originally contained all the numbers from 1 to ‘n’, but due to a data error, one of the numbers got duplicated which also resulted in one number going missing. Find both these numbers.
+
+Example 1
+```python
+Input: [3, 1, 2, 5, 2]
+Output: [2, 4]
+Explanation: '2' is duplicated and '4' is missing.
+```
+
+Example 2
+```python
+Input: [3, 1, 2, 3, 6, 4]
+Output: [3, 5]
+Explanation: '3' is duplicated and '5' is missing.
+```
+
+```java
+  public static int[] findNumbers(int[] nums) {
+    int i = 0;
+    while (i < nums.length) {
+      if (nums[i] != nums[nums[i] - 1])
+        swap(nums, i, nums[i] - 1);
+      else
+        i++;
+    }
+
+    for (i = 0; i < nums.length; i++)
+      if (nums[i] != i + 1)
+        return new int[] { nums[i], i + 1 };
+
+    return new int[] { -1, -1 };
+  }
+```
+
+这个就是披着missing number的马甲, 因为最小的positive的范围就在[1, array.length]，小于0和超过范围的我们都不管，把数字放在正确的位置，第一个不是正确的index就是要找的最小的
+**Find the smallest missing Positive Number**
+```java
+  public static int findNumber(int[] nums) {
+    int i = 0;
+    while (i < nums.length) {
+      if (nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1])
+        swap(nums, i, nums[i] - 1);
+      else
+        i++;
+    }
+    
+    for (i = 0; i < nums.length; i++)
+      if (nums[i] != i + 1)
+        return i + 1;
+
+    return nums.length + 1;
+  }
+```
+
+最后一个超级马甲，其实和之前的题目还是一样，只不过corner case要注意，要记录已经有存在的数字，所以我们要个set存已经有的数字
+**Find the First K Missing Positive Numbers**
+Given an unsorted array containing numbers and a number ‘k’, find the first ‘k’ missing positive numbers in the array.
+
+Example 1
+```python
+Input: [3, -1, 4, 5, 5], k=3
+Output: [1, 2, 6]
+Explanation: The smallest missing positive numbers are 1, 2 and 6.
+```
+
+Example 2
+```python
+Input: [2, 3, 4], k=3
+Output: [1, 5, 6]
+Explanation: The smallest missing positive numbers are 1, 5 and 6.
+```
+
+Example 3
+```python
+Input: [-2, -3, 4], k=2
+Output: [1, 2]
+Explanation: The smallest missing positive numbers are 1 and 2.
+```
+Solution: 基本和找最小的positive一样，记录已经存在的数字就好
+```java
+  public static List<Integer> findNumbers(int[] nums, int k) {
+    int i = 0;
+    while (i < nums.length) {
+      if (nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1])
+        swap(nums, i, nums[i] - 1);
+      else
+        i++;
+    }
+
+    List<Integer> missingNumbers = new ArrayList<>();
+    Set<Integer> extraNumbers = new HashSet<>();
+    for (i = 0; i < nums.length && missingNumbers.size() < k; i++)
+      if (nums[i] != i + 1) {
+        missingNumbers.add(i + 1);
+        extraNumbers.add(nums[i]);
+      }
+
+    // add the remaining missing numbers
+    for (i = 1; missingNumbers.size() < k; i++) {
+      int candidateNumber = i + nums.length;
+      // ignore if the array contains the candidate number
+      if (!extraNumbers.contains(candidateNumber))
+        missingNumbers.add(candidateNumber);
+    }
+
+    return missingNumbers;
+  }
+```
+
 * * *
 - - -
 ### Binary Search
