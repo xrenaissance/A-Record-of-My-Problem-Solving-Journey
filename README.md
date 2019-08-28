@@ -311,6 +311,21 @@ An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following stru
 * * *
 - - -
 ### Sweep Line
+Sweep Line类型的题目的特征:
+- 事件往往是以区间的形式存在
+- 区间的两端代表事件的开始和结束
+- 需要排序
+
+#### Number of Airplanes in the Sky
+Given an interval list which are flying and landing time of the flight. How many airplanes are on the sky at most?
+```python
+[
+[1,10],
+[2,3],
+[5,8],
+[4,7]
+]
+```
 
 
 * * *
