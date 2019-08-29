@@ -1,6 +1,7 @@
 # Big Data System Design
 ### E2E big data solution
 NIFI (Logstash) + Kafka + Spark Streaming + Cassandra + Splunk
+
 AWS(Google Cloud) big data solution
 
 ### Machine learning architecture
@@ -15,14 +16,19 @@ Kafka-related questions
 
 ### Cassandra
 Cassandra-related questions
-core data structure: log-structured merge-tree (LSM)
-table design skills
 
-Performance tunning
-CPU Profiling tool
+- core data structure: log-structured merge-tree (LSM)
+- table design skills
+- Performance tuning tool
+
+CPU Profiling
+
 JVM
+
 Jstack
+
 top
+
 GC Log Analysis
 
 ### Spark
