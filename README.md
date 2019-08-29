@@ -457,13 +457,13 @@ We are given an array containing ‘n’ objects. Each object, when created, was
 Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without any extra space. For simplicity, let’s assume we are passed an integer array containing only the sequence numbers, though each number is actually an object.
 
 **Example 1**
-```
+```python
 Input: [3, 1, 5, 4, 2]
 Output: [1, 2, 3, 4, 5]
 ```
 
 **Example 2**
-```
+```python
 Input: [2, 6, 4, 3, 1, 5]
 Output: [1, 2, 3, 4, 5, 6]
 ```
@@ -764,7 +764,7 @@ Given a directed graph, find the topological ordering of its vertices.
 ```
 
 **Example 1:**
-```
+```python
 Input: Vertices=4, Edges=[3, 2], [3, 0], [2, 0], [2, 1]
 Output: Following are the two valid topological sorts for the given graph:
 1) 3, 2, 0, 1
@@ -773,7 +773,7 @@ Output: Following are the two valid topological sorts for the given graph:
 ![SummaryDocs/uf-1.png](SummaryDocs/tp1.png)
 
 **Example 2:**
-```
+```python
 Input: Vertices=5, Edges=[4, 2], [4, 3], [2, 0], [2, 1], [3, 1]
 Output: Following are all valid topological sorts for the given graph:
 1) 4, 2, 3, 0, 1
@@ -785,7 +785,7 @@ Output: Following are all valid topological sorts for the given graph:
 ![SummaryDocs/uf-1.png](SummaryDocs/tp2.png)
 
 **Example 3:**
-```
+```python
 Input: Vertices=7, Edges=[6, 4], [6, 2], [5, 3], [5, 4], [3, 0], [3, 1], [3, 2], [4, 1]
 Output: Following are all valid topological sorts for the given graph:
 1) 5, 6, 3, 4, 0, 1, 2
@@ -861,7 +861,7 @@ There is a dictionary containing words from an alien language for
 which we don’t know the ordering of the characters. Write a method to
 find the correct order of characters in the alien language.
 **Example 1:**
-```
+```python
 Input: Words: ["ba", "bc", "ac", "cab"]
 Output: bac
 Explanation: Given that the words are sorted lexicographically by the rules of the alien language, so
@@ -874,7 +874,7 @@ From the above two points we can conclude that the correct character order is: "
 ```
 
 **Example 2:**
-```
+```python
 Input: Words: ["cab", "aaa", "aab"]
 Output: cab
 Explanation: From the given words we can conclude the following ordering among its characters:
@@ -886,7 +886,7 @@ From the above two points, we can conclude that the correct character order is: 
 ```
 
 **Example 3:**
-```
+```python
 Input: Words: ["ywx", "xww", "xz", "zyy", "zwz"]
 Output: yxwz
 Explanation: From the given words we can conclude the following ordering among its characters:
