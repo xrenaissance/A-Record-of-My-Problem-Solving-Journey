@@ -1,4 +1,4 @@
-package BFS;
+package BreadthAndBestFirstSearch;
 
 public class TreeNode {
     int val;

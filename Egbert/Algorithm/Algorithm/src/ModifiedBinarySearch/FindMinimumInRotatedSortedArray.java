@@ -15,9 +15,9 @@ public class FindMinimumInRotatedSortedArray {
         int end = nums.length - 1;
         while (start < end) {
             int mid = start + (end - start) / 2;
-            if (nums[mid] < nums[end]) {
+            if (nums[mid] < nums[end]) { // right side
                 end = mid;
-            } else {
+            } else { // then left side
                 start = mid + 1;
             }
         }

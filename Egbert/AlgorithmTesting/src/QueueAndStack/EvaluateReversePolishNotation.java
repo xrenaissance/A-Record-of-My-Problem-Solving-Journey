@@ -34,8 +34,6 @@ public class EvaluateReversePolishNotation {
         String input = "1234";
         String input1 = "/";
         String input2 = "a12*";
-        System.out.println(Integer.valueOf(input));
         System.out.println(Integer.valueOf(input1));
-        System.out.println(Integer.valueOf(input2));
     }
 }

@@ -1,5 +1,12 @@
 package ModifiedBinarySearch;
 
+/**
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/6447997434986496
+ * @author Egbert Li
+ * @date 13/07/2019
+ * @Time log N
+ * @Space 1
+ */
 public class CeilingOfANumber {
     // smallest number that >= key
     public static int searchCeilingOfANumber(int[] arr, int key) {

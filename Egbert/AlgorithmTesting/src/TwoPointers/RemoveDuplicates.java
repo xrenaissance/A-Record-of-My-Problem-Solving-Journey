@@ -1,5 +1,12 @@
 package TwoPointers;
 
+/**
+ * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/5070198568648704
+ * @author Egbert Li
+ * @date 23/06/2019
+ * @Time O(N)
+ * @Space O(1)
+ */
 public class RemoveDuplicates {
     public static int remove(int[] arr) {
         if (arr == null || arr.length == 0) {

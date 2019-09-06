@@ -1,6 +1,7 @@
 package FastSlowPointers;
 
 /**
+ * @leetcode https://leetcode.com/problems/happy-number/
  * @link https://www.educative.io/collection/page/5668639101419520/5671464854355968/5315930441646080
  * @author Egbert Li
  * @date 2/7/2019

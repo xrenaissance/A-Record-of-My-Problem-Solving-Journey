@@ -1,12 +1,27 @@
 package Amazon;
 
+/**
+ * @link https://leetcode.com/problems/longest-palindromic-substring/
+ * @author Egbert Li
+ * @date 9/5/2019
+ */
 public class LongestPalindromicSubstring {
-    private static LongestPalindromicSubstring ourInstance = new LongestPalindromicSubstring();
+    public String longestPalindrome(String s) {
+        int n = s.length();
+        String res = null;
 
-    public static LongestPalindromicSubstring getInstance() {
-        return ourInstance;
-    }
+        boolean[][] dp = new boolean[n][n];
 
-    private LongestPalindromicSubstring() {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = i; j < n; j++) {
+                dp[i][j] = s.charAt(i) == s.charAt(j) && (j - i < 3 || dp[i + 1][j - 1]);
+
+                if (dp[i][j] && (res == null || j - i + 1 > res.length())) {
+                    res = s.substring(i, j + 1);
+                }
+            }
+        }
+
+        return res;
     }
 }

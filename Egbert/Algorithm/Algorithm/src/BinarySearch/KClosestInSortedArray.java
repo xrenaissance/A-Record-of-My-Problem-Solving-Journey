@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class KClosestInSortedArray {
 
-    
+
     // The time complexity is O(log n) + k, space complexity is O(k)
     public int[] kClosestVersion(int[] array, int target, int k) {
         if (array == null || array.length == 0 || k == 0) {

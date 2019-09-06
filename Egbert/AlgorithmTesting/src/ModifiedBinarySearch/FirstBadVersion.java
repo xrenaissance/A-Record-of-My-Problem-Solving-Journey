@@ -7,7 +7,7 @@ package ModifiedBinarySearch;
  * @Space O 1
  */
 public class FirstBadVersion {
-    public int firstBadVersion(int n) {
+    public static  int firstBadVersion(int n) {
         int start = 1;
         int end = n;
         while (start < end) {
@@ -19,5 +19,8 @@ public class FirstBadVersion {
             }
         }
         return start;
+    }
+    private static boolean isBadVersion(int n) {
+        return true;
     }
 }

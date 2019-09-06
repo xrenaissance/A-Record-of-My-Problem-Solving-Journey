@@ -1,0 +1,25 @@
+  public List<List<Integer>> combinations(int target, int[] coins) {
+    List<List<Integer>> result = new ArrayList<>();
+    if (coins == null || coins.length == 0|| target < 0) {
+      return result;
+    }
+    List<Integer> currLayer = new ArrayList<>();
+    combinations(target, coins, 0, result, currLayer);
+    return result;
+  }
+  public void combinations(int moneyLeft, int[] coins, 
+                           int index, List<List<Integer>> result, 
+                           List<Integer> currLayer) {
+    if (index == coins.length) {
+      if (moneyLeft == 0) {
+        result.add(new ArrayList<>(currLayer)); 
+      }
+      return;
+    }
+    int maxNum = moneyLeft / coins[index];
+    for (int i = 0; i <= maxNum; i++) {
+      currLayer.add(i);
+      combinations(moneyLeft - coins[index] * i, coins, index + 1, result, currLayer);
+      currLayer.remove(currLayer.size() - 1);
+    }
+  }

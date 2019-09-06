@@ -27,7 +27,7 @@ public class BinaryTreePaths {
         currLayer.append(root.val).append("->");
         if (root.left == null && root.right == null) {
             result.add(currLayer.substring(0, currLayer.length() - 2));
-            System.out.println("----------------------------");
+            // System.out.println("----------------------------");
         } else {
             findPaths(root.left, currLayer, result);
             findPaths(root.right, currLayer, result);
@@ -47,5 +47,8 @@ public class BinaryTreePaths {
         for (String s : allPath) {
             System.out.println(s);
         }
+        char a = '1';
+        int b = (a - '0') * 10;
+        System.out.println(b);
     }
 }

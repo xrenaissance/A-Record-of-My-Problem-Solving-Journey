@@ -1,5 +1,9 @@
-package SweepLine;
-import java.util.*;
+package MergeIntervals;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @leetcode https://leetcode.com/problems/meeting-rooms-ii/
  * @Time NlogN

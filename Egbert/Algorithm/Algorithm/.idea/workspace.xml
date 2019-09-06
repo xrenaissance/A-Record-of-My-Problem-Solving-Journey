@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c64552a-0d6d-4e4c-8c3b-3406259c0656" name="Default Changelist" comment="find the interval first, then check which interval that target in">
+      <change afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/Knapsack/KnapsackOD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/Knapsack/PartitionSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AmazonOA/RightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AmazonOA/RightRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AmazonOA/amazonoa2/OAtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AmazonOA/amazonoa2/OAtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/KClosestInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/KClosestInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/MedianOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/MedianOfTwoSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitOperation/CountingBitsONSol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitOperation/CountingBitsONSol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitOperation/PowerOfTwoBitSol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitOperation/PowerOfTwoBitSol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/Bipartite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/Bipartite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/GraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/KSmallestInUnsortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/KSmallestInUnsortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/NumberofIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/NumberofIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/AllSubSetIIBestSol1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/AllSubSetIIBestSol1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/AllValidPermutationsOfParenthesesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/AllValidPermutationsOfParenthesesII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/GraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFST/SumRootToLeafNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFST/SumRootToLeafNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/LargestXOf1s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LargestXOf1s.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/LongestAscendingSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LongestAscendingSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/LongestConsecutive1s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LongestConsecutive1s.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/LongestCrossOf1s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/LongestCrossOf1s.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Design/MovingAveragefromDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Design/MovingAveragefromDataStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FastSlowPointers/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastSlowPointers/HappyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMap/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMap/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMap/ValidSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMap/ValidSudoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heap/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KWayMerge/MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KWayMerge/MergeKSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/DeleteNodesAtIndices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/DeleteNodesAtIndices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/DivideTwoIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/DivideTwoIntegers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/FibonacciNumberLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/FibonacciNumberLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Math/FindMinimuminRotatedSortedArrayII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/FindMinimuminRotatedSortedArrayII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MergeIntervals/MeetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeIntervals/MeetingRoomsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModifiedBinarySearch/FindMinimumInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModifiedBinarySearch/FindMinimumInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModifiedBinarySearch/FloorOfANumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModifiedBinarySearch/FloorOfANumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProbabilitySamplingRandomization/PerfectShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProbabilitySamplingRandomization/PerfectShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueAndStack/ImplementDequeWith3Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QueueAndStack/ImplementDequeWith3Stacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueAndStack/ImplementStackUsingQueues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QueueAndStack/ImplementStackUsingQueues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionII/RverseLinkedListInPairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindow/NoRepeatSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindow/NoRepeatSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringI/AllPermutationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringI/AllPermutationsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringI/CompareVersionNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringI/CompareVersionNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringI/ReverseWordsInASentenceII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringI/ReverseWordsInASentenceII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringI/ReverseWordsInASentenceIIBestSol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringI/ReverseWordsInASentenceIIBestSol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subsets/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subsets/ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TopKElements/KClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TopKElements/KClosestPointsToOrigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TopKElements/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TopKElements/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/isBSTIterative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/isBSTIterative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwoHeaps/NextInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwoHeaps/NextInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/SerializeandDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/SerializeandDeserializeBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFS/WordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFST/ConnectLevelOrderSiblingsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/BFST/ConnectLevelOrderSiblingsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/BinaryTreePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/BinaryTreePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/SumRootToLeafNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/SumRootToLeafNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/TreeDiameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DFST/TreeDiameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DecompressString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DecompressString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Design/MovingAveragefromDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Design/MovingAveragefromDataStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Design/PeekingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Design/PeekingIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/Knapsack/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/Knapsack/Knapsack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/WoodAndWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/DynamicProgramming/WoodAndWorkers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/FastSlowPointers/CircularArrayLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/FastSlowPointers/CircularArrayLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/GetMinimumMoves.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/GetMinimumMoves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/GoogleTaged/RangeSumOfBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/GoogleTaged/RangeSumOfBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/RepeatedDNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/RepeatedDNA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/ValidSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Hash/ValidSudoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/KthSmallestInMSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/KthSmallestInMSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/KthSmallestPairDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/KthSmallestPairDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/MergeKSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/KWayMerge/MergeKSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/LinkedList/CopyListwithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/LinkedList/CopyListwithRandomPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/LinkedList/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/LinkedList/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/LongestSubstringWithKtypesCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/LongestSubstringWithKtypesCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Math/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Math/BasicCalculatorII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Math/MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Math/MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/CeilingOfANumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/CeilingOfANumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/SqrtII.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/ModifiedBinarySearch/SqrtII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/OA/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/OA/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/PermutationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/PermutationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/PermutationsTestII.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/PermutationsTestII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/QueueAndStack/EvaluateReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/QueueAndStack/EvaluateReversePolishNotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SegementTree/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SegementTree/Interval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SegementTree/IntervalSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SegementTree/IntervalSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/MaximumSumSubarrayOfSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/MaximumSumSubarrayOfSizeK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/NoRepeatSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/NoRepeatSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/StringPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/StringPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/WordConcatenation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SlidingWindow/WordConcatenation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SmallestDenominator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SmallestDenominator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Sort/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Sort/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/CountAndSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/CountAndSay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/NumberofSegmentsinaString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/NumberofSegmentsinaString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/ZigZagConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/String/ZigZagConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/CombinationOfCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/CombinationOfCoins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/DifferentWaystoAddParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/DifferentWaystoAddParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/FourOutOfT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/FourOutOfT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/Heart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/LongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/LongestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/PermutationsWithDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/PermutationsWithDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/StdDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Subsets/StdDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/SweepLine/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/SweepLine/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/TreeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/TreeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/Trie/TrieRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/Trie/TrieRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/ShortestWindowSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/ShortestWindowSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/SortedArraySquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/TwoPointers/SortedArraySquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/UnionFind/TreeCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/UnionFind/TreeCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AlgorithmTesting/src/aToPowerb.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AlgorithmTesting/src/aToPowerb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/KCloestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/KCloestPointsToOrigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/LongestPalindromicSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/ReverseVowelsOfaString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/ReverseVowelsOfaString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/RightRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/RightRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/SubtreeOfAnotherTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/SubtreeOfAnotherTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/Amazon/validParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/Amazon/validParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OA/src/ValidIfBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA/src/ValidIfBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOD/src/ParkingLot/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOD/src/ParkingLot/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOD/src/ParkingLot/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOD/src/ParkingLot/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOD/src/ParkingLot/ParkingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOD/src/ParkingLot/ParkingSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindTheDuplicateNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindCorruptNums.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FirstMissingPositive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FirstKMissingPositive.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sorting/QuickSortArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Facebook/SortAnArray.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/Knapsack/Knapsack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1617">
+              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindTheMissingNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/CyclicSort.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindAllDuplicatesInAnArray.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/StringI/CompareVersionNumbers.java" />
+        <option value="$PROJECT_DIR$/src/DFST/MaximumSubtree.java" />
+        <option value="$PROJECT_DIR$/src/TopKElements/KClosest.java" />
+        <option value="$PROJECT_DIR$/src/UnionFind/ConnectingCitiesWithMinimumCost.java" />
+        <option value="$PROJECT_DIR$/src/StringI/DecreaseToBePalindrome.java" />
+        <option value="$PROJECT_DIR$/src/DP/PalindromicSubstrings.java" />
+        <option value="$PROJECT_DIR$/src/TwoPointers/SubarrayProductLessThanK.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/SurroundedRegions.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/WallsandGates.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/OpenTheLock.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/ZombieinMatrix.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/SlidingPuzzleII.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/NumberofIslands.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/KnightShortestPath.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/NumberOfIslandsII.java" />
+        <option value="$PROJECT_DIR$/src/UnionFind/NumberOfIslandsII.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/WordLadder.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/BinaryTreeVerticalOrderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/Design/MovingAveragefromDataStream.java" />
+        <option value="$PROJECT_DIR$/src/BreadthAndBestFirstSearch/SerializeAndDeserializeBinaryTreeLeetCode.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/InsertIntervalList.java" />
+        <option value="$PROJECT_DIR$/src/DFST/BinaryTreeUpsideDown.java" />
+        <option value="$PROJECT_DIR$/src/DFST/ConvertBSTtoGreaterTree.java" />
+        <option value="$PROJECT_DIR$/src/DFST/InorderSuccessorinBST.java" />
+        <option value="$PROJECT_DIR$/InorderSuccessorinBST.java" />
+        <option value="$PROJECT_DIR$/src/DFST/FindLeavesofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/Google/RangeSumOfBST.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/InsertIntervalLeetcode.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/IntervalsIntersection.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/IntervalListIntersections.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/ConflictingAppointments.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/MyCalendarI.java" />
+        <option value="$PROJECT_DIR$/src/SweepLine/NumberofAirplanesintheSky.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/MeetingRooms.java" />
+        <option value="$PROJECT_DIR$/src/MergeIntervals/MeetingRoomsII.java" />
+        <option value="$PROJECT_DIR$/src/SweepLine/MeetingRoomsII.java" />
+        <option value="$PROJECT_DIR$/src/SweepLine/MaximumCPULoad.java" />
+        <option value="$PROJECT_DIR$/src/SweepLine/EmployeeFreeTime.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/LinkedListCycleII.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/MinimizeMalwareSpread.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/StrStr.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/PairsofSongsWithTotalDurationsDivisibleby60.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/FindDuplicateFileinSystem.java" />
+        <option value="$PROJECT_DIR$/src/TopologicalSort/LongestIncreasingPathInAMatrix.java" />
+        <option value="$PROJECT_DIR$/src/CyclicSort.java" />
+        <option value="$PROJECT_DIR$/src/CyclicSort/FindAllMissingNumbers.java" />
+        <option value="$PROJECT_DIR$/src/Trie/AutocompleteSystem.java" />
+        <option value="$PROJECT_DIR$/src/CyclicSort/FirstKMissingPositive.java" />
+        <option value="$PROJECT_DIR$/src/TagedByCompany/Facebook/SortAnArray.java" />
+        <option value="$PROJECT_DIR$/src/DynamicProgramming/Knapsack/Knapsack.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1440" />
+    <option name="y" value="-1138" />
+    <option name="width" value="1440" />
+    <option name="height" value="2524" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Design" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DynamicProgramming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DynamicProgramming" type="462c0819:PsiDirectoryNode" />
+              <item name="Knapsack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Heap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TagedByCompany" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TagedByCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Trie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Trie" type="462c0819:PsiDirectoryNode" />
+              <item name="TrieRecursion.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567216382427" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DynamicProgramming.Knapsack" />
+      <recent name="TagedByCompany.Facebook" />
+      <recent name="CyclicSort" />
+      <recent name="Trie" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/CyclicSort" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/TagedByCompany/Google" />
+      <recent name="$PROJECT_DIR$/src/BreadthAndBestFirstSearch" />
+      <recent name="$PROJECT_DIR$/src/Sort" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build TopKElements/">
+    <configuration name="CharacterReplacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindow.CharacterReplacement" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SlidingWindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuadrupleSumToTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TwoPointers.QuadrupleSumToTarget" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FastSlowPointers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RearrangeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FastSlowPointers.RearrangeList" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FastSlowPointers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchBitonicArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ModifiedBinarySearch.SearchBitonicArray" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ModifiedBinarySearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build TopKElements/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="untitled104" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$" />
+      <directory value="$PROJECT_DIR$/src/TopKElements" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build TopKElements/" />
+        <item itemvalue="Application.SearchBitonicArray" />
+        <item itemvalue="Application.RearrangeList" />
+        <item itemvalue="Application.QuadrupleSumToTarget" />
+        <item itemvalue="Application.CharacterReplacement" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c64552a-0d6d-4e4c-8c3b-3406259c0656" name="Default Changelist" comment="" />
+      <created>1552219364789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552219364789</updated>
+      <workItem from="1552219368801" duration="21175000" />
+      <workItem from="1552698014272" duration="116000" />
+      <workItem from="1552703028815" duration="598000" />
+      <workItem from="1552704218513" duration="598000" />
+      <workItem from="1552705273665" duration="57000" />
+      <workItem from="1552705730019" duration="120641000" />
+      <workItem from="1555223854609" duration="65000" />
+      <workItem from="1555226452007" duration="15783000" />
+      <workItem from="1555395852974" duration="28431000" />
+      <workItem from="1555931868174" duration="609000" />
+      <workItem from="1555933027348" duration="38863000" />
+      <workItem from="1556710705362" duration="19314000" />
+      <workItem from="1557096464733" duration="459000" />
+      <workItem from="1557190846667" duration="36794000" />
+      <workItem from="1559220132952" duration="3602000" />
+      <workItem from="1559639404113" duration="2283000" />
+      <workItem from="1559701178148" duration="5613000" />
+      <workItem from="1559884362820" duration="53000" />
+      <workItem from="1559885572227" duration="2243000" />
+      <workItem from="1559958154904" duration="14251000" />
+      <workItem from="1560582364913" duration="2975000" />
+      <workItem from="1560706201540" duration="25217000" />
+      <workItem from="1560994862136" duration="3932000" />
+      <workItem from="1561091743783" duration="7372000" />
+      <workItem from="1561268306148" duration="4630000" />
+      <workItem from="1561416952974" duration="3863000" />
+      <workItem from="1561690781333" duration="2239000" />
+      <workItem from="1561774135718" duration="574000" />
+      <workItem from="1561774734561" duration="28202000" />
+      <workItem from="1562064807358" duration="32935000" />
+      <workItem from="1562300592185" duration="608000" />
+      <workItem from="1562377844956" duration="15893000" />
+      <workItem from="1562682363814" duration="36746000" />
+      <workItem from="1563348605044" duration="216000" />
+      <workItem from="1563348935436" duration="5826000" />
+      <workItem from="1563535499293" duration="545000" />
+      <workItem from="1563544516756" duration="784000" />
+      <workItem from="1563549277412" duration="48000" />
+      <workItem from="1563549351953" duration="574000" />
+      <workItem from="1563549952564" duration="2760000" />
+      <workItem from="1563553690179" duration="14915000" />
+      <workItem from="1563904443386" duration="1224000" />
+      <workItem from="1563909156925" duration="21386000" />
+      <workItem from="1564177679735" duration="60602000" />
+      <workItem from="1565111532225" duration="16579000" />
+      <workItem from="1565850309877" duration="33652000" />
+      <workItem from="1567216424156" duration="475000" />
+      <workItem from="1567241291336" duration="1545000" />
+      <workItem from="1567246833960" duration="485000" />
+    </task>
+    <task id="LOCAL-00001" summary="find the interval first, then check which interval that target in">
+      <created>1552219969272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552219969272</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="638350000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1440" y="-1138" width="1440" height="2524" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19521046" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32970712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4497908" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3292887" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.15570934" />
+      <window_info anchor="bottom" id="JProfiler" order="13" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32982308" />
+      <window_info anchor="bottom" id="Pomodoro" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24972914" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299025" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" weight="0.3292061" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3299025" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="PlantUML" order="11" />
+      <window_info anchor="right" id="leetcode" order="12" side_tool="true" />
+      <window_info anchor="right" id="aiXcoder" order="13" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17768148" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.17152466" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="find the interval first, then check which interval that target in" />
+    <option name="LAST_COMMIT_MESSAGE" value="find the interval first, then check which interval that target in" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FastSlowPointers/RearrangeList.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/InorderSuccessorinBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DFST/InorderSuccessorinBSTII.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DFST/FindLeavesofBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/Node.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/DefanginganIPAddress.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/JewelsandStones.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/ToLowerCase.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Google/RangeSumOfBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/InsertIntervalLeetcode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/IntervalsIntersection.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/IntervalListIntersections.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/ConflictingAppointments.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/MyCalendarI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SweepLine/Interval.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SweepLine/NumberofAirplanesintheSky.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/MeetingRooms.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeIntervals/MeetingRoomsII.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SweepLine/MeetingRoomsII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SweepLine/MaximumCPULoad.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SweepLine/EmployeeFreeTime.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/TopologicalSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/CourseSchedule.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/CourseScheduleII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListCycleII.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/AllTaksShedulingOrders.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/AlienDictionary.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/SequenceReconstruction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/MinimizeMalwareSpread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/StrStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/PairsofSongsWithTotalDurationsDivisibleby60.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/DropBoxTag/FindDuplicateFileinSystem.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/MinimumHeightTrees.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort.java" />
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort/LongestIncreasingPathInAMatrix.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/TrieRecursion.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/Trie.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/AutocompleteSystem.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trie/WordDictionary.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindAllMissingNumbers.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindAllDuplicateNumbers.java" />
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindTheDuplicateNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindCorruptNums.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FirstMissingPositive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FirstKMissingPositive.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sorting/QuickSortArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TagedByCompany/Facebook/SortAnArray.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindTheMissingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/CyclicSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CyclicSort/FindAllDuplicatesInAnArray.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/Knapsack/Knapsack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>untitled104</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

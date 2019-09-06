@@ -6,7 +6,7 @@ import java.util.*;
  * @lintcode https://www.lintcode.com/problem/word-ladder/description?_from=ladder&&fromId=14
  * @param m average length of string
  * @param n length of dict
- * @Time m * n
+ * @Time m * nre
  * @Space m * n worst for visited hashset
  */
 public class WordLadder {

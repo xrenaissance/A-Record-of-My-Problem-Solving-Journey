@@ -4,7 +4,8 @@ package Math;
  * @author Egbert Li
  * @date 10/06/2019
  * @Time O(K)
- * @Space O(1)
+ * @Space O(1)1121!
+ *
  */
 public class FibonacciNumberLite {
     public int fibonacci(int K) {

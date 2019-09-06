@@ -1,0 +1,29 @@
+(function() {
+try {
+    var fcmp = typeof __cmp == 'function';
+    var rnd = Math.random();
+    var img = document.createElement('img');
+    var exptid = encodeURIComponent('ZGAJoVvQX64AAAAUN1MwAw==');
+    var url = window.top.location === window.location ? window.location.toString() : document.referrer;
+    img.src = 'https://pd.sharethis.com/pd/dtscout?_t_=px&url=' + encodeURIComponent(url) + '&event_source=dtscout' + '&rnd=' + rnd + '&exptid=' + exptid + '&fcmp=' + fcmp;
+    img.async = true;
+    document.body.appendChild(img);
+
+    var pxscrpt = document.createElement('script');
+    pxscrpt.id = 'pxscrpt';
+    pxscrpt.async = true;
+    pxscrpt.src = 'https://t.sharethis.com/1/d/t.dhj?cid=c010&cls=C&rnd=' + rnd + '&stid=' + exptid;
+    document.body.appendChild(pxscrpt);
+
+} catch (err) {
+    try {
+    var rnd = Math.random();
+    if (rnd < 0.01) {
+        var e = encodeURIComponent('' + err);
+        var imge = document.createElement('img');
+        imge.src='//pd.sharethis.com/pd/error?e=' + e + '&partner=<no value>';
+        document.body.appendChild(imge);
+    }
+    } catch(errr) {}
+}
+})()

@@ -1,5 +1,7 @@
 package Design;
-import java.util.*;
+
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * @leetcode https://leetcode.com/problems/moving-average-from-data-stream/

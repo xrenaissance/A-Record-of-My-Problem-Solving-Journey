@@ -1,4 +1,7 @@
 package DFST;
-
-public class Node {
+class Node {
+    public int val;
+    public Node left;
+    public Node right;
+    public Node parent;
 }

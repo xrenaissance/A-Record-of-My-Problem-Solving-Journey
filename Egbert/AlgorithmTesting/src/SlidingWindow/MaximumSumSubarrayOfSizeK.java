@@ -20,7 +20,6 @@ public class MaximumSumSubarrayOfSizeK {
                 windowStart++; // slide the window ahead
             }
         }
-
         return maxSum;
     }
 

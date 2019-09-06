@@ -11,22 +11,17 @@ public class LongestConsecutive1s {
         if (array == null || array.length == 0) {
             return 0;
         }
-        int longest = 0;
         int curr = 0;
+        int longest = 0;
         for (int i = 0; i < array.length; i++) {
-            if (i == 0 && array[i] == 1) {
-                curr ++;
-                longest = Math.max(curr, longest);
-            } else {
-                if (array[i] == 1 && array[i - 1] == 1) {
-                    curr++;
-                } else if (array[i] == 1) {
+            if (array[i] == 1) {
+                if (i == 0 || array[i - 1] == 0) {
                     curr = 1;
                 } else {
-                    curr = 0;
+                    curr++;
                 }
-                longest = Math.max(longest, curr);
             }
+            longest = Math.max(curr, longest);
         }
         return longest;
     }

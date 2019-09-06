@@ -6,7 +6,7 @@ package DP;
  * States representation:
  * M[i] = {i > 0 && i < n | M[i - 1] + 1 if array[i - 1] < array[i] else 1}
  * Time: O(N)
- * Space: O(N)
+ * Space: O(1)
  */
 public class LongestAscendingSubArray {
     public int longest(int[] array) {

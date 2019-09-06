@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.HashSet;
 
 /**
+ * @leetcode https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * @author Egbert Li
  * @date 16/06/2019
  * @Time O(N)

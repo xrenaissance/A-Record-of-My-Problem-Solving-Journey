@@ -8,6 +8,9 @@ import java.util.PriorityQueue;
  * @date 20/7/2019
  * @Time k log M  M = total number of input arrays
  * @Space M
+ *
+ * Similar problems: Given ‘M’ sorted arrays, find the median number among all arrays.
+ * k = N/2
  */
 public class KthSmallestInMSortedArrays {
     public static int findKthSmallest(List<Integer[]> lists, int k) {

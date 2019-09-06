@@ -6,19 +6,23 @@ public class ParkingSpot {
     public ParkingSpot(VehicleSize size) {
         this.size = size;
     }
+    public int getSize() {
+        return size.getSize();
+    }
     public boolean fit(Vehicle v) {
-        return currentVehicle == null && size.getSize() >= v.getSize().getSize();
+        return currentVehicle != null;
+                //currentVehicle == null && size.getSize() > v.getSize().getSize();
     }
 
     public Vehicle getVehicle() {
-       return this.currentVehicle;
+        return this.currentVehicle;
     }
 
     // record a vehicle is parked by updating the currentVehicle field
     public void park(Vehicle v) {
-        currentVehicle = v;
+        this.currentVehicle = v;
     }
     public void leave() {
-        currentVehicle = null;
+        this.currentVehicle = null;
     }
 }

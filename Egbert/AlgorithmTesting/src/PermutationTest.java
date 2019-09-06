@@ -3,7 +3,11 @@ public class PermutationTest {
     public static void permutation(char[] input, int index) {
         if (index == input.length) { // print solution and return
             System.out.println("print out solution: index = " + index);
+            System.out.println("___________");
+            System.out.print("|  ");
             printArray(input);
+            System.out.print("  |\n");
+            System.out.println("-----------");
            return;
         }
         // push each letter in the index-th position of the input str
@@ -31,6 +35,6 @@ public class PermutationTest {
        for (int i = 0; i < input.length; i ++) {
             System.out.print(input[i] + " ");
        }
-       System.out.println();
+       //System.out.println();
     }
 }

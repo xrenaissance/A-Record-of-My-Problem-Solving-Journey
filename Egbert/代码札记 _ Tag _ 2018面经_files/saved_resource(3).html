@@ -1,0 +1,53 @@
+
+<!-- saved from url=(0025)http://t.dtscout.com/idg/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><script>
+window.onload = function() {
+var uid_g = 'l=3DD172A7A215BC5C785958A90297CDA4';
+var uid_s = '';
+
+var debug = {};
+var pass_uid = false;
+var method = false;
+
+if(uid_g.length > 0) {
+    method = "got";
+    pass_uid = uid_g.substring(2);
+} else if(uid_s.length > 0) {
+    method = "set";
+    pass_uid = uid_s.substring(2);
+}
+
+debug.pass_method = method;
+debug.pass_uid = pass_uid;
+
+var ls_uid = localStorage.getItem('uid');
+debug.ls_uid = ls_uid;
+
+var uid = false
+if(method == 'got') {
+    uid = pass_uid;
+    debug.uid_src = 'got';
+} else {
+    var ls_uid = localStorage.getItem('uid');
+    debug.ls_uid = ls_uid;
+    if(ls_uid) {
+        uid = ls_uid;
+        debug.uid_src = 'ls';
+    } else {
+        uid = pass_uid;
+        debug.uid_src = 'new-set';
+    }
+}
+
+if(uid != false) {
+    debug.uid = uid;
+    localStorage.setItem('uid', uid);
+
+    var ret = {u : uid, src : debug.uid_src};
+    try {
+        parent.postMessage(JSON.stringify(ret), "*");
+    } catch(e) { }
+}
+}
+</script>
+</body></html>

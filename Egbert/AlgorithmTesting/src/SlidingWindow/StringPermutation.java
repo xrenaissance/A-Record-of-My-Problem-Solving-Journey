@@ -87,5 +87,4 @@ public class StringPermutation {
         System.out.println(StringPermutation.findPermutation("bcdxabcdy", "bcdyabcdx"));
         System.out.println(StringPermutation.findPermutation("aaacb", "abc"));
     }
-    }
 }

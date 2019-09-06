@@ -9,12 +9,10 @@ import java.util.LinkedList;
  */
 public class ImplementStackUsingQueues {
     Deque<Integer> queue;
-    /** Initialize your data structure here. */
     public ImplementStackUsingQueues() {
         queue = new LinkedList<Integer>();
     }
 
-    /** Push element x onto stack. */
     public void push(int x) {
         queue.offerLast(x);
         int i = 0;
@@ -24,7 +22,6 @@ public class ImplementStackUsingQueues {
         }
     }
 
-    /** Removes the element on top of the stack and returns that element. */
     public int pop() {
         if (queue.isEmpty()) {
             return -1;

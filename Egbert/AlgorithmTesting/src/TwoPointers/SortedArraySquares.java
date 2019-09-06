@@ -43,3 +43,4 @@ public class SortedArraySquares {
         System.out.println();
     }
 }
+

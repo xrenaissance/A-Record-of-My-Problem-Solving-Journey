@@ -5,7 +5,7 @@ package ProbabilitySamplingRandomization;
  * @date 4/06/2019
  * @Time
  */
-import java.util.Random;jj
+import java.util.Random;
 public class PerfectShuffle {
     // Iteration 1: call random(0 - 51) -> let's say, random_number = 5, call swap(5, 51)
     // P(every card can showup in position 51) = 1/52
