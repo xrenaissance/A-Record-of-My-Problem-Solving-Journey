@@ -37,6 +37,7 @@ GC Log Analysis
 
 ### Security
 #### Keberos
+[Kerbos authentication protocol](Kerberos - authentication protocol)
 
 #### Apache Knox (Gateway)
 
