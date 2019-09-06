@@ -36,8 +36,8 @@ GC Log Analysis
 ### YARN
 
 ### Security
-#### Keberos
-[Kerbos authentication protocol](Kerberos - authentication protocol)
+#### Kerberos
+[Kerberos authentication protocol](https://www.youtube.com/watch?v=_44CHD3Vx-0)
 
 #### Apache Knox (Gateway)
 
