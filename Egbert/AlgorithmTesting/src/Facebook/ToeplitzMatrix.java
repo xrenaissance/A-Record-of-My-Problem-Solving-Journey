@@ -1,11 +1,37 @@
 package Facebook;
-
+import java.util.Map;
+import java.util.HashMap;
 /**
  * @leetcode https://leetcode.com/problems/toeplitz-matrix/
  * @Time M * N
- * @Space
+ * @Space 1
  */
 public class ToeplitzMatrix {
+   // follow-ups
+   public boolean isToeplitzMatrix(int[][] matrix) {
+       if (matrix == null || matrix.length == 0) {
+           return true;
+       }
+
+       int rows = matrix.length;
+       int cols = matrix[0].length;
+       Map<Integer, Integer> diagMapping = new HashMap<>();
+
+       for (int i = 0; i < rows; i++) {
+           for (int j = 0; j < cols; j++) {
+               if (!diagMapping.containsKey(i - j)) {
+                   diagMapping.put(i - j, matrix[i][j]);
+               } else {
+                   if (matrix[i][j] != diagMapping.get(i - j)) {
+                       return false;
+                   }
+               }
+           }
+       }
+
+       return true;
+   }
+
     // clean code
     public boolean isToeplitzMatrixClean(int[][] matrix) {
         if (matrix == null || matrix.length == 0) {
