@@ -1,6 +1,6 @@
 package Facebook;
 import java.util.Map;
-import java.util.HashMap;
+import java.util.HashMap;t
 /**
  * @leetcode https://leetcode.com/problems/toeplitz-matrix/
  * @Time M * N
@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class ToeplitzMatrix {
    // follow-ups
-   public boolean isToeplitzMatrix(int[][] matrix) {
+   public boolean isToeplitzMatrixFollowUps(int[][] matrix) {
        if (matrix == null || matrix.length == 0) {
            return true;
        }
