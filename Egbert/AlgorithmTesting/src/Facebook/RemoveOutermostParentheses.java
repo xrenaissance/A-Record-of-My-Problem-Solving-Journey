@@ -19,20 +19,17 @@ public class RemoveOutermostParentheses {
         stack.offerLast(s.charAt(index++));
         while (index < s.length()) {
             if (s.charAt(index) == ')') {
-                if (stack.size() - 1 == 0) {
-                    stack.pollLast();
-                    index++;
-                } else {
-                    stack.pollLast();
-                    sol.append(s.charAt(index++));
+                if (stack.size() - 1 != 0) {
+                    sol.append(')');
                 }
+
+                stack.pollLast();
+                index++;
             } else {
-                if (stack.size() == 0) {
-                    stack.offerLast(s.charAt(index++));
-                } else {
-                    stack.offer(s.charAt(index++));
+                if (stack.size() != 0) {
                     sol.append('(');
                 }
+                stack.offerLast(s.charAt(index++));
             }
         }
 
