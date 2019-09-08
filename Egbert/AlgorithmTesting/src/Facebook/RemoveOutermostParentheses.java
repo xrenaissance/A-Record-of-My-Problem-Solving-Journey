@@ -5,7 +5,7 @@ import java.util.LinkedList;
 /**
  * @leetcode https://leetcode.com/problems/remove-outermost-parentheses/
  * @Time N
- * @Space N
+ * @Space 1
  */
 public class RemoveOutermostParentheses {
     public String removeOuterParentheses(String s) {
@@ -13,24 +13,22 @@ public class RemoveOutermostParentheses {
             return s;
         }
 
-        Deque<Character> stack = new LinkedList<>();
         StringBuilder sol = new StringBuilder();
-        int index = 0;
-        stack.offerLast(s.charAt(index++));
+        int index = 1;
+        int open = 1;
         while (index < s.length()) {
-            if (s.charAt(index) == ')') {
-                if (stack.size() - 1 != 0) {
-                    sol.append(')');
-                }
-
-                stack.pollLast();
-                index++;
-            } else {
-                if (stack.size() != 0) {
+            if (s.charAt(index) == '(') {
+                if (open != 0) {
                     sol.append('(');
                 }
-                stack.offerLast(s.charAt(index++));
+                open++;
+            } else {
+                if (open - 1 != 0) {
+                    sol.append(')');
+                }
+                open--;
             }
+            index++;
         }
 
         return sol.toString();
