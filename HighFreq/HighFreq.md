@@ -45,7 +45,23 @@
 #### 3 - Basic Algorithm && data structure high frequency problems II
 
 #### 4 - BFS
-
+40. [Leetcode 286 Walls and Gates](https://leetcode.com/problems/walls-and-gates/)
+41. [Lintcode 598 Zombie in Matrix](https://www.lintcode.com/problem/zombie-in-matrix/description?_from=ladder&&fromId=14)
+42. [Leetcode 130 surrounded-regions](https://leetcode.com/problems/surrounded-regions/)
+43. [Leetcode 752 open-the-lock/](https://leetcode.com/problems/open-the-lock/)
+44. [Leetcode 773 sliding-puzzle/](https://leetcode.com/problems/sliding-puzzle/)
+45. [Lintcode 794 sliding-puzzle II](https://www.lintcode.com/problem/sliding-puzzle-ii/?_from=ladder&&fromId=14)
+46. [Leetcode 200 number-of-islands](https://leetcode.com/problems/number-of-islands)
+47. [Lintcode 611 Knight Shortest Path](https://www.lintcode.com/problem/knight-shortest-path/description?_from=ladder&&fromId=14)
+48. [Leetcode 261 graph-valid-tree](https://leetcode.com/problems/graph-valid-tree)
+49. [Leetcode 305 number-of-islands-ii](https://leetcode.com/problems/number-of-islands-ii)
+50. [Lintcode 573 Build Post Office II](https://www.lintcode.com/problem/build-post-office-ii/description?_from=ladder&&fromId=14)
+51. [Leetcode 127 word-ladder](https://leetcode.com/problems/word-ladder)
+52. [Leetcode 417 pacific-atlantic-water-flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+53. [Leetcode 314 binary-tree-vertical-order-traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)
+54. [Leetcode 987 vertical-order-traversal-of-a-binary-tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)
+55. [Leetcode 133 clone-graph](https://leetcode.com/problems/clone-graph)
+56. [Leetcode 103 binary-tree-zigzag-level-order-traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)
 #### 5 - Tree & Divide and Conquer
 
 #### 6 - DFS
