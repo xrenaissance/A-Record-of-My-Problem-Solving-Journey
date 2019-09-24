@@ -63,7 +63,16 @@
 55. [Leetcode 133 clone-graph](https://leetcode.com/problems/clone-graph)
 56. [Leetcode 103 binary-tree-zigzag-level-order-traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)
 #### 5 - Tree & Divide and Conquer
-
+57. [Leetcode 538 convert-bst-to-greater-tree](https://leetcode.com/problems/convert-bst-to-greater-tree)
+58. [Leetcode 366 ind-leaves-of-binary-tree](https://leetcode.com/problems/find-leaves-of-binary-tree)
+59. [Leetcode 156 binary-tree-upside-down](https://leetcode.com/problems/binary-tree-upside-down)
+60. [Leetcode 285 inorder-successor-in-bst](https://leetcode.com/problems/inorder-successor-in-bst)
+61. [Leetcode 140 word-break-ii](https://leetcode.com/problems/word-break-ii)
+62. [Leetcode 104 maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+63. [Leetcode 139 word-break](https://leetcode.com/problems/word-break)
+64. [Leetcode 98 validate-binary-search-tree](https://leetcode.com/problems/validate-binary-search-tree)
+65. [Leetcode 938 range-sum-of-bst](https://leetcode.com/problems/range-sum-of-bst/)
+66. [Leetcode 87 scramble-string](https://leetcode.com/problems/scramble-string)
 #### 6 - DFS
 57. [Leetcode 625 minimum-factorization](https://leetcode.com/problems/minimum-factorization/)
 58. [Leetcode 282 expression-add-operators](https://leetcode.com/problems/expression-add-operators)
