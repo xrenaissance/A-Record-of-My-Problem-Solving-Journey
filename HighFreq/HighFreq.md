@@ -65,3 +65,12 @@
 #### 5 - Tree & Divide and Conquer
 
 #### 6 - DFS
+57. [Leetcode 625 minimum-factorization](https://leetcode.com/problems/minimum-factorization/)
+58. [Leetcode 282 expression-add-operators](https://leetcode.com/problems/expression-add-operators)
+59. [Leetcode 425 word-squares](https://leetcode.com/problems/word-squares)
+60. [Leetcode 126 word-ladder-ii](https://leetcode.com/problems/word-ladder-ii)
+61. [Leetcode 17 letter-combinations-of-a-phone-number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
+65. [Leetcode 51 n-queens](https://leetcode.com/problems/n-queens)
+66. [Leetcode 52 n-queens-ii](https://leetcode.com/problems/n-queens-ii)
+67. [Leetcode 37 sudoku-solver](https://leetcode.com/problems/sudoku-solver)
+68. [Leetcode 320 generalized-abbreviation](https://leetcode.com/problems/generalized-abbreviation/)
